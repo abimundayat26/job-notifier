@@ -51,6 +51,12 @@ def run_pipeline(config: Config, today: date | None = None) -> int:
         and filters.passes_freshness(posting, today)
     ]
 
+    logger.info(
+        "post-filter: %d of %d candidates passed title/location/seniority/freshness filters",
+        len(to_notify),
+        len(candidates),
+    )
+
     sent = notify.send_notifications(
         to_notify,
         config.notification.discord_webhook_url,
