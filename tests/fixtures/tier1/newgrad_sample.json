@@ -1,0 +1,34 @@
+[
+  {
+    "source": "Simplify",
+    "category": "Quant",
+    "company_name": "Citadel",
+    "id": "6a5a374d-834e-4bb6-992d-4cc74f3f8e8e",
+    "title": "Quantitative Researcher",
+    "active": true,
+    "date_updated": 1782889234,
+    "date_posted": 1782889199,
+    "url": "https://www.citadel.com/careers/details/quantitative-researcher-phd-graduate-us/",
+    "locations": ["Greenwich, CT", "Houston, TX", "Miami, FL", "NYC"],
+    "company_url": "https://simplify.jobs/c/Citadel",
+    "is_visible": true,
+    "sponsorship": "Other",
+    "degrees": ["PhD"]
+  },
+  {
+    "source": "Simplify",
+    "category": "Software",
+    "company_name": "Mechanize",
+    "id": "20fe605e-9125-4857-b077-cf256888994c",
+    "title": "Software Engineer",
+    "active": false,
+    "date_updated": 1767841111,
+    "date_posted": 1767841111,
+    "url": "https://jobs.ashbyhq.com/mechanize/1ef28bb2-6251-4da6-a590-a4a7606368cb/application",
+    "locations": ["SF"],
+    "company_url": "https://simplify.jobs/c/Mechanize",
+    "is_visible": true,
+    "sponsorship": "Other",
+    "degrees": []
+  }
+]

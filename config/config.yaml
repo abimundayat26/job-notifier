@@ -1,0 +1,31 @@
+sources:
+  tier1_aggregators:
+    - repo: "SimplifyJobs/Summer2026-Internships"
+      ref: "dev"
+      path: ".github/scripts/listings.json"
+    - repo: "SimplifyJobs/New-Grad-Positions"
+      ref: "dev"
+      path: ".github/scripts/listings.json"
+  tier2_ats: []
+  tier3_scrapers: []
+  tier4_manual: []
+
+filters:
+  title_include: ["software engineer", "backend"]
+  title_exclude: ["senior", "staff", "principal"]
+  locations: ["New York, NY", "Remote"]
+  remote_only: false
+  seniority_exclude: ["senior", "staff", "principal"]
+
+notification:
+  discord_webhook_url: "${DISCORD_WEBHOOK_URL}"
+  per_run_cap: 5
+
+state:
+  path: "state/seen_jobs.json"
+  retention_days: 30
+  seed_window_days: 30
+  commit: true
+
+failure:
+  abort_threshold_pct: 50

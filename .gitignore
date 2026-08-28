@@ -6,4 +6,5 @@
 *.key
 __pycache__/
 .pytest_cache/
-data/
+state/test-*
+*.egg-info/
