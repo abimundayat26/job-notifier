@@ -6,9 +6,35 @@ sources:
     - repo: "SimplifyJobs/New-Grad-Positions"
       ref: "dev"
       path: ".github/scripts/listings.json"
-  tier2_ats: []
-  tier3_scrapers: []
-  tier4_manual: []
+  # `company` here must normalize identically to how Tier 1 spells the same
+  # employer after normalize.normalize_company() (lowercase + whitespace
+  # collapse only -- no alias table, unlike normalize_location). A mismatch
+  # doesn't error; it just creates two separate state entries for the same
+  # real job, so you get a duplicate notification instead of a merged one.
+  # This is the accepted failure mode (SPEC.md §9: ambiguous matches never
+  # silently collapse) but it's worth getting right when adding a row.
+  tier2_ats:
+    # Palantir has a live public Lever board (confirmed 2026-08-30 via
+    # api.lever.co/v0/postings/palantir) -- no Tier 3 scraper needed despite
+    # SPEC.md §4 listing it as a Tier 3 target.
+    - platform: lever
+      company: "Palantir"
+      slug: "palantir"
+  tier3_scrapers:
+    - company: "citadel"
+      fetch_method: http
+      sort_order: relevance   # no date field exists to sort by; pagination is mandatory (SPEC.md §11)
+  tier4_manual:
+    # Citadel Securities: /careers/open-opportunities/ (and even /robots.txt)
+    # returns a genuine interactive Cloudflare JS challenge -- plain HTTP
+    # scraping doesn't work, and Playwright isn't guaranteed to pass it from
+    # a GitHub Actions IP. Confirmed 2026-08-30.
+    - "Citadel Securities"
+    # D. E. Shaw: careers page doesn't server-render listings, and its own JS
+    # bundle references /recruit/, which robots.txt explicitly disallows --
+    # the real job data likely sits behind a path our own politeness policy
+    # (SPEC.md §11) forbids fetching. Confirmed 2026-08-30.
+    - "D. E. Shaw"
 
 filters:
   title_include: ["software engineer", "backend"]

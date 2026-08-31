@@ -4,6 +4,14 @@ from typing import Any
 from jobnotifier.models import Posting
 
 
+class UnsupportedPlatformError(ValueError):
+    """Raised when a config row names a tier2_ats platform with no registered adapter."""
+
+
+class UnsupportedScraperError(ValueError):
+    """Raised when a config row names a tier3_scrapers company with no registered adapter."""
+
+
 class Source(ABC):
     """Common interface every tier's source adapter implements."""
 

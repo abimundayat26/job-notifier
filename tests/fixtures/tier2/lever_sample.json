@@ -1,0 +1,18 @@
+[
+  {
+    "id": "abc123-def456",
+    "text": "Software Engineer",
+    "categories": {"location": "New York", "team": "Engineering", "commitment": "Full-time"},
+    "createdAt": 1755648000000,
+    "hostedUrl": "https://jobs.lever.co/examplecoslug/abc123-def456",
+    "applyUrl": "https://jobs.lever.co/examplecoslug/abc123-def456/apply"
+  },
+  {
+    "id": "ghi789-jkl012",
+    "text": "Site Reliability Engineer",
+    "categories": {"team": "Infrastructure", "commitment": "Full-time"},
+    "createdAt": 1755734400000,
+    "hostedUrl": "https://jobs.lever.co/examplecoslug/ghi789-jkl012",
+    "applyUrl": "https://jobs.lever.co/examplecoslug/ghi789-jkl012/apply"
+  }
+]

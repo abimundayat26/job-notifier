@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "id": "ashby-job-1",
+      "title": "Software Engineer, Platform",
+      "department": "Engineering",
+      "team": "Platform",
+      "location": "Remote - US",
+      "isRemote": true,
+      "publishedAt": "2026-08-01T00:00:00.000Z",
+      "jobUrl": "https://jobs.ashbyhq.com/examplecoslug/ashby-job-1",
+      "applyUrl": "https://jobs.ashbyhq.com/examplecoslug/ashby-job-1/apply",
+      "isListed": true
+    },
+    {
+      "id": "ashby-job-2",
+      "title": "Software Engineer, Data (Unlisted)",
+      "department": "Engineering",
+      "team": "Data",
+      "location": "New York, NY",
+      "isRemote": false,
+      "publishedAt": "2026-07-15T00:00:00.000Z",
+      "jobUrl": "https://jobs.ashbyhq.com/examplecoslug/ashby-job-2",
+      "applyUrl": "https://jobs.ashbyhq.com/examplecoslug/ashby-job-2/apply",
+      "isListed": false
+    }
+  ]
+}

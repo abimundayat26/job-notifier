@@ -16,7 +16,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install ".[dev]"
+        run: pip install ".[dev,tier3]"
 
       - name: Run live smoke test against real sources
         run: pytest -m live tests/live

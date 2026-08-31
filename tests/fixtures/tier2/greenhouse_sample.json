@@ -1,0 +1,22 @@
+{
+  "jobs": [
+    {
+      "id": 4123456789,
+      "title": "Software Engineer, Backend",
+      "updated_at": "2026-08-20T10:00:00-04:00",
+      "location": {"name": "New York, NY"},
+      "absolute_url": "https://job-boards.greenhouse.io/examplecoslug/jobs/4123456789",
+      "departments": [{"id": 1, "name": "Engineering"}],
+      "offices": [{"id": 1, "name": "New York"}]
+    },
+    {
+      "id": 4123456790,
+      "title": "Software Engineer, Infra (Remote)",
+      "updated_at": "2026-08-22T09:00:00-04:00",
+      "location": null,
+      "absolute_url": "https://job-boards.greenhouse.io/examplecoslug/jobs/4123456790",
+      "departments": [],
+      "offices": []
+    }
+  ]
+}
