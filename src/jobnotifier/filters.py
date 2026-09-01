@@ -44,6 +44,8 @@ def passes_filters(posting: Posting, filters: FiltersConfig) -> bool:
         return False
     if filters.remote_only and not _is_remote(posting.location):
         return False
+    if filters.us_only and not normalize.is_us_location(posting.location):
+        return False
     if filters.locations and not normalize.location_matches_filter(posting.location, filters.locations):
         return False
     return True

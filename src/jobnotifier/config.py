@@ -65,6 +65,7 @@ class FiltersConfig:
     title_exclude: list[str] = field(default_factory=list)
     locations: list[str] = field(default_factory=list)
     remote_only: bool = False
+    us_only: bool = False
     seniority_exclude: list[str] = field(default_factory=list)
 
 
@@ -211,6 +212,7 @@ def load_config(path: str | Path) -> Config:
         title_exclude=filters_raw.get("title_exclude", []),
         locations=filters_raw.get("locations", []),
         remote_only=filters_raw.get("remote_only", False),
+        us_only=filters_raw.get("us_only", False),
         seniority_exclude=filters_raw.get("seniority_exclude", []),
     )
 

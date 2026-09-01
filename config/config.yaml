@@ -64,8 +64,13 @@ filters:
     - "quant researcher"
     - "quantitative researcher"
   title_exclude: ["senior", "staff", "principal"]
-  locations: [] # no location constraint -- any location/remote status passes
+  locations: [] # no specific-city constraint -- us_only below is the only geo filter
   remote_only: false
+  # normalize.is_us_location(): passes on a US state/city, "United States", or
+  # "Remote in USA" (a merged multi-location posting passes if any one office
+  # is US-based). A bare "Remote" with no country given is ambiguous and is
+  # NOT excluded -- see normalize.py's _REMOTE_QUALIFIER_RE comment.
+  us_only: true
   seniority_exclude: ["senior", "staff", "principal"]
 
 notification:

@@ -26,6 +26,21 @@ def test_load_real_config_yaml(monkeypatch):
     assert config.state.retention_days == 30
     assert config.state.commit is True
     assert config.failure.abort_threshold_pct == 50
+    assert config.filters.us_only is True
+
+
+def test_us_only_defaults_to_false_when_absent(tmp_path, monkeypatch):
+    monkeypatch.setenv("DISCORD_WEBHOOK_URL", "https://discord.com/api/webhooks/test")
+    config_path = tmp_path / "config.yaml"
+    config_path.write_text(
+        """
+notification:
+  discord_webhook_url: "${DISCORD_WEBHOOK_URL}"
+""",
+        encoding="utf-8",
+    )
+    config = load_config(config_path)
+    assert config.filters.us_only is False
 
 
 def test_missing_env_var_raises(tmp_path, monkeypatch):

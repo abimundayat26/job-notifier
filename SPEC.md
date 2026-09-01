@@ -122,7 +122,11 @@ are unconfirmed guesses.
 Keyword/rule-based only, applied after dedup and the freshness filter:
 
 - **Title include/exclude keyword lists**.
-- **Location list** and a **remote-only** toggle.
+- **Location list**, a **remote-only** toggle, and a **US-only** toggle. US-only is a
+  country-level check (US state/city, "United States", or "Remote in USA"), independent
+  of the location list, so the location list can stay empty while still constraining to
+  the US. A posting merged across several offices (§9) passes if any one of them is
+  US-based. A bare "Remote" with no country given is ambiguous and is not excluded.
 - **Seniority**, classified from title keywords (e.g. exclude "Senior"/"Staff"/
   "Principal").
 - **Salary is display-only** — included in notifications when a source exposes it, but
@@ -252,6 +256,7 @@ filters:
   title_exclude: ["senior", "staff", "principal"]
   locations: ["New York, NY", "Remote"]
   remote_only: false
+  us_only: true
   seniority_exclude: ["senior", "staff", "principal"]
 
 notification:

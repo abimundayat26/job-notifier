@@ -68,6 +68,17 @@ def test_remote_only_requires_remote_location():
     assert not passes_filters(_posting(location="New York, NY"), f)
 
 
+def test_us_only_rejects_non_us_location():
+    f = _filters(us_only=True)
+    assert passes_filters(_posting(location="New York, NY"), f)
+    assert not passes_filters(_posting(location="London, UK"), f)
+
+
+def test_us_only_defaults_to_false():
+    f = _filters()
+    assert passes_filters(_posting(location="London, UK"), f)
+
+
 def test_salary_never_used_as_filter_input():
     f = _filters(title_include=["engineer"])
     assert passes_filters(_posting(salary="$999999"), f)
