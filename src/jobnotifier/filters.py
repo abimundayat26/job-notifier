@@ -1,3 +1,4 @@
+import re
 from datetime import date
 
 from jobnotifier import normalize
@@ -7,9 +8,23 @@ from jobnotifier.models import Posting
 FRESHNESS_WINDOW_DAYS = 7
 
 
+def _keyword_matches(title_lower: str, keyword: str) -> bool:
+    # Multi-word phrases keep plain substring matching on purpose: it's what
+    # lets "software engineer" also catch "Software Engineering Intern" for
+    # free. Single-word keywords (especially short abbreviations like "swe"/
+    # "sde") get word-boundary matching instead -- plain substring matching
+    # on those false-positives inside unrelated words, e.g. "swe" inside
+    # "Swedish" (SPEC has no fuzzy matching elsewhere either; this keeps that
+    # spirit while fixing the one class of false positive substrings cause).
+    kw_lower = keyword.lower()
+    if " " in kw_lower:
+        return kw_lower in title_lower
+    return re.search(rf"\b{re.escape(kw_lower)}\b", title_lower) is not None
+
+
 def _title_contains_any(title: str, keywords: list[str]) -> bool:
     title_lower = title.lower()
-    return any(kw.lower() in title_lower for kw in keywords)
+    return any(_keyword_matches(title_lower, kw) for kw in keywords)
 
 
 def _is_remote(location: str) -> bool:

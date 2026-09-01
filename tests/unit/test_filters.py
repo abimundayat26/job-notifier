@@ -35,6 +35,17 @@ def test_title_include_requires_match():
     assert passes_filters(_posting(title="Backend Engineer"), f)
 
 
+def test_title_include_phrase_keyword_uses_substring_matching():
+    f = _filters(title_include=["software engineer"])
+    assert passes_filters(_posting(title="Software Engineering Intern"), f)
+
+
+def test_title_include_single_word_keyword_uses_word_boundary_matching():
+    f = _filters(title_include=["swe"])
+    assert passes_filters(_posting(title="SWE Intern"), f)
+    assert not passes_filters(_posting(title="Speech & Voice AI Analyst - Swedish Speakers"), f)
+
+
 def test_title_exclude_rejects_match():
     f = _filters(title_exclude=["senior"])
     assert not passes_filters(_posting(title="Senior Software Engineer"), f)

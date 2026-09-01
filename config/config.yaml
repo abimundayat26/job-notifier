@@ -37,9 +37,31 @@ sources:
     - "D. E. Shaw"
 
 filters:
-  title_include: ["software engineer", "backend"]
+  # Matching is a plain case-insensitive substring check (filters.py's
+  # _title_contains_any), not word-boundary/regex -- "software engineer"
+  # already covers "Software Engineering [Intern/Manager/...]" for free.
+  # swe/sde are kept short deliberately (real abbreviations, not written out
+  # elsewhere in this list) at a small, accepted false-positive-substring risk.
+  title_include:
+    - "software engineer"
+    - "software developer"
+    - "software development" # catches "Software Development Engineer" (SDE) titles "software developer" itself doesn't match
+    - "swe"
+    - "sde"
+    - "backend engineer"
+    - "backend developer"
+    - "frontend engineer"
+    - "frontend developer"
+    - "full stack engineer"
+    - "full-stack engineer"
+    - "fullstack engineer"
+    - "full stack developer"
+    - "quant developer"
+    - "quantitative developer"
+    - "quant researcher"
+    - "quantitative researcher"
   title_exclude: ["senior", "staff", "principal"]
-  locations: ["New York, NY", "Remote"]
+  locations: [] # no location constraint -- any location/remote status passes
   remote_only: false
   seniority_exclude: ["senior", "staff", "principal"]
 
