@@ -9,13 +9,31 @@ from jobnotifier.models import Posting, canonical_key
 # keeps a comfortable margin under that (SPEC.md §10).
 THROTTLE_SECONDS = 2.5
 
+# A merged multi-location posting (normalize.merge_locations) can run to
+# hundreds of characters -- keep the notification skimmable by truncating at
+# the last complete "; "-separated location that still fits, rather than
+# showing the whole list.
+_MAX_LOCATION_DISPLAY_LEN = 100
+
+
+def _display_location(location: str) -> str:
+    if len(location) <= _MAX_LOCATION_DISPLAY_LEN:
+        return location
+    truncated = location[:_MAX_LOCATION_DISPLAY_LEN]
+    last_sep = truncated.rfind("; ")
+    if last_sep > 0:
+        truncated = truncated[:last_sep]
+    return truncated + "..."
+
 
 def build_message(posting: Posting) -> dict:
     fields = [
         {"name": "Company", "value": posting.company, "inline": True},
-        {"name": "Location", "value": posting.location, "inline": True},
+        {"name": "Location", "value": _display_location(posting.location), "inline": True},
         {"name": "Source", "value": posting.source_id, "inline": True},
     ]
+    if posting.term:
+        fields.append({"name": "Term", "value": posting.term, "inline": True})
     if posting.date_posted is not None:
         fields.append({"name": "Posted", "value": posting.date_posted.isoformat(), "inline": True})
     if posting.salary:

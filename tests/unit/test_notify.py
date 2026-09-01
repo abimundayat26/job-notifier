@@ -30,11 +30,36 @@ def test_build_message_includes_required_fields():
 
 
 def test_build_message_omits_absent_optional_fields():
-    posting = _posting(date_posted=None, salary=None)
+    posting = _posting(date_posted=None, salary=None, term=None)
     embed = build_message(posting)["embeds"][0]
     field_names = {f["name"] for f in embed["fields"]}
     assert "Posted" not in field_names
     assert "Salary" not in field_names
+    assert "Term" not in field_names
+
+
+def test_build_message_includes_term_when_present():
+    posting = _posting(term="Summer 2027")
+    embed = build_message(posting)["embeds"][0]
+    term_field = next(f for f in embed["fields"] if f["name"] == "Term")
+    assert term_field["value"] == "Summer 2027"
+
+
+def test_build_message_truncates_long_location():
+    long_location = "; ".join(f"City {i}, ST" for i in range(30))
+    posting = _posting(location=long_location)
+    embed = build_message(posting)["embeds"][0]
+    location_field = next(f for f in embed["fields"] if f["name"] == "Location")
+    assert len(location_field["value"]) <= 103  # max len + "..."
+    assert location_field["value"].endswith("...")
+    assert not location_field["value"][:-3].endswith(";")  # cut at a full location, not mid-entry
+
+
+def test_build_message_short_location_not_truncated():
+    posting = _posting(location="New York, NY; Remote")
+    embed = build_message(posting)["embeds"][0]
+    location_field = next(f for f in embed["fields"] if f["name"] == "Location")
+    assert location_field["value"] == "New York, NY; Remote"
 
 
 def test_send_notifications_respects_per_run_cap():

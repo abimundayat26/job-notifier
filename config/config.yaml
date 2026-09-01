@@ -1,9 +1,12 @@
 sources:
+  # "Off-season" (Fall/Winter/Spring) internships are NOT a separate repo --
+  # SimplifyJobs' README-Off-Season.md is just a filtered view of this same
+  # listings.json (confirmed 2026-09-01: every term from Summer 2025 through
+  # Summer 2029 appears in one file, distinguished by each entry's "terms"
+  # field). One row covers both "2027 internships" and "2027 off-season
+  # internships" the user asked for.
   tier1_aggregators:
-    - repo: "SimplifyJobs/Summer2026-Internships"
-      ref: "dev"
-      path: ".github/scripts/listings.json"
-    - repo: "SimplifyJobs/New-Grad-Positions"
+    - repo: "SimplifyJobs/Summer2027-Internships"
       ref: "dev"
       path: ".github/scripts/listings.json"
   # `company` here must normalize identically to how Tier 1 spells the same

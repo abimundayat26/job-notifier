@@ -68,6 +68,13 @@ def test_aggregator_id_kept_only_in_extra_not_used_elsewhere():
     assert tiktok.extra["aggregator_id"] == "e7d90cdc-955f-4bb2-8a94-81ea48265d84"
 
 
+def test_terms_field_becomes_posting_term():
+    raw = _load_fixture("summer2026_sample.json")
+    postings = _make_source().parse(raw)
+    tiktok = next(p for p in postings if p.company == "TikTok")
+    assert tiktok.term == "Summer 2026"
+
+
 def test_community_submitted_source_field_does_not_break_parsing():
     raw = _load_fixture("summer2026_sample.json")
     postings = _make_source().parse(raw)
@@ -84,3 +91,4 @@ def test_newgrad_fixture_parses_without_terms_field():
     mechanize = next(p for p in postings if p.company == "Mechanize")
     assert mechanize.location == "SF"
     assert mechanize.active is False
+    assert mechanize.term is None

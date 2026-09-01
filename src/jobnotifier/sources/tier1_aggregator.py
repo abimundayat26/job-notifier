@@ -48,6 +48,13 @@ class Tier1AggregatorSource(Source):
             # merge them into a single Posting/notification instead of one
             # per location (they share this same url -- it's one real job).
             locations = item.get("locations") or [""]
+
+            # "terms" is a list (e.g. ["Summer 2027"], sometimes several for a
+            # rolling program) -- display-only, joined as-is; absent/empty
+            # means term=None so notify.py's Term field just doesn't show.
+            terms = item.get("terms") or []
+            term = ", ".join(terms) or None
+
             postings.append(
                 Posting(
                     company=item.get("company_name", ""),
@@ -57,6 +64,7 @@ class Tier1AggregatorSource(Source):
                     date_posted=date_posted,
                     active=item.get("active"),
                     salary=None,
+                    term=term,
                     source_id=self.source_id,
                     extra={
                         "category": item.get("category"),

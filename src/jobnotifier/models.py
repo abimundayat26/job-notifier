@@ -15,6 +15,7 @@ class Posting:
     date_posted: date | None = None
     active: bool | None = None
     salary: str | None = None
+    term: str | None = None  # e.g. "Summer 2027" -- display-only, not part of canonical_key
     source_id: str = ""
     extra: dict = field(default_factory=dict)
 

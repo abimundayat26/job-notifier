@@ -7,9 +7,9 @@ def test_load_real_config_yaml(monkeypatch):
     monkeypatch.setenv("DISCORD_WEBHOOK_URL", "https://discord.com/api/webhooks/test")
     config = load_config("config/config.yaml")
 
-    assert len(config.sources.tier1_aggregators) == 2
+    assert len(config.sources.tier1_aggregators) == 1
     first = config.sources.tier1_aggregators[0]
-    assert first.repo == "SimplifyJobs/Summer2026-Internships"
+    assert first.repo == "SimplifyJobs/Summer2027-Internships"
     assert first.ref == "dev"
     assert first.path == ".github/scripts/listings.json"
 
