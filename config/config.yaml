@@ -67,7 +67,7 @@ filters:
 
 notification:
   discord_webhook_url: "${DISCORD_WEBHOOK_URL}"
-  per_run_cap: 5
+  per_run_cap: 20
 
 state:
   path: "state/seen_jobs.json"
