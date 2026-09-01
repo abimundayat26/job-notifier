@@ -49,3 +49,17 @@ def test_unlisted_entry_maps_is_listed_false_to_active_false():
     postings = _make_source().parse(raw)
     unlisted = next(p for p in postings if p.extra["ats_id"] == "ashby-job-2")
     assert unlisted.active is False
+
+
+def test_compensation_tier_summary_becomes_salary():
+    raw = _load_fixture("ashby_sample.json")
+    postings = _make_source().parse(raw)
+    listed = next(p for p in postings if p.extra["ats_id"] == "ashby-job-1")
+    assert listed.salary == "$120K – $150K • Offers Equity"
+
+
+def test_missing_compensation_becomes_salary_none():
+    raw = _load_fixture("ashby_sample.json")
+    postings = _make_source().parse(raw)
+    unlisted = next(p for p in postings if p.extra["ats_id"] == "ashby-job-2")
+    assert unlisted.salary is None

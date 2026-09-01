@@ -57,17 +57,26 @@ def run_pipeline(config: Config, today: date | None = None) -> int:
         len(candidates),
     )
 
-    sent = notify.send_notifications(
-        to_notify,
-        config.notification.discord_webhook_url,
-        config.notification.per_run_cap,
-    )
-
-    state_module.save_state(config.state.path, new_state)
-    if config.state.commit:
-        git_ops.commit_and_push_state(
-            config.state.path, f"Update job state ({today.isoformat()})"
+    # State is computed above from what was actually fetched, independent of
+    # whether Discord delivery succeeds -- it must always be persisted, even
+    # if send_notifications raises unexpectedly, or a posting whose
+    # notification already went out would never get recorded as seen and
+    # would be re-sent as a duplicate next run. notify.send_notifications
+    # already isolates per-message failures internally (SPEC.md §10); this
+    # `finally` is defense in depth against a failure that escapes it anyway.
+    sent = 0
+    try:
+        sent = notify.send_notifications(
+            to_notify,
+            config.notification.discord_webhook_url,
+            config.notification.per_run_cap,
         )
+    finally:
+        state_module.save_state(config.state.path, new_state)
+        if config.state.commit:
+            git_ops.commit_and_push_state(
+                config.state.path, f"Update job state ({today.isoformat()})"
+            )
 
     logger.info(
         "run complete: %d candidates, %d notified, %d state entries",

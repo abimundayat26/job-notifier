@@ -20,6 +20,11 @@ class AshbySource(Source):
     confirmed against a real payload containing an unlisted job. Low risk
     either way: absence-based closure in state.py is the fallback path
     regardless of what `active` says.
+
+    includeCompensation=true is what makes `compensation.compensationTierSummary`
+    (a human-readable string, e.g. "$120K – $150K • Offers Equity") available
+    on each job -- confirmed against a live Ashby board. Not every posting has
+    compensation data set, so the field/object can be absent.
     """
 
     tier = 2
@@ -45,6 +50,8 @@ class AshbySource(Source):
                     published_at.replace("Z", "+00:00")
                 ).date()
 
+            compensation = item.get("compensation") or {}
+
             postings.append(
                 Posting(
                     company=self.company,
@@ -53,7 +60,7 @@ class AshbySource(Source):
                     url=item.get("jobUrl", ""),
                     date_posted=date_posted,
                     active=item.get("isListed"),  # see class docstring: best-guess, unconfirmed
-                    salary=None,
+                    salary=compensation.get("compensationTierSummary"),
                     source_id=self.source_id,
                     extra={
                         "department": item.get("department"),

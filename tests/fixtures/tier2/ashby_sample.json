@@ -10,7 +10,11 @@
       "publishedAt": "2026-08-01T00:00:00.000Z",
       "jobUrl": "https://jobs.ashbyhq.com/examplecoslug/ashby-job-1",
       "applyUrl": "https://jobs.ashbyhq.com/examplecoslug/ashby-job-1/apply",
-      "isListed": true
+      "isListed": true,
+      "compensation": {
+        "compensationTierSummary": "$120K – $150K • Offers Equity",
+        "scrapeableCompensationSalarySummary": "$120K - $150K"
+      }
     },
     {
       "id": "ashby-job-2",

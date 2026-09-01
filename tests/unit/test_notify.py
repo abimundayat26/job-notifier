@@ -85,6 +85,46 @@ def test_send_notifications_respects_per_run_cap():
     assert len(sleeps) == 1  # throttled between the two sends, not after the last
 
 
+def test_send_notifications_one_failure_does_not_block_remaining_sends():
+    # A single posting's send failing (network blip, Discord 429/5xx, bad
+    # embed) must not abort the batch -- otherwise an exception here would
+    # propagate out of the pipeline and prevent state from being saved,
+    # causing already-delivered notifications to be re-sent next run.
+    postings = [_posting(title=f"Job {i}", url=f"https://example.com/job/{i}") for i in range(3)]
+    calls = []
+
+    class OkResp:
+        def raise_for_status(self):
+            pass
+
+    def flaky_post(url, json, timeout):
+        calls.append(json)
+        if len(calls) == 2:
+            raise ConnectionError("simulated network blip")
+        return OkResp()
+
+    sent = send_notifications(
+        postings, "https://discord.example/webhook", per_run_cap=20,
+        post_fn=flaky_post, sleep_fn=lambda s: None,
+    )
+    assert len(calls) == 3  # all three were attempted despite the middle one failing
+    assert sent == 2  # only the two that actually succeeded are counted
+
+
+def test_send_notifications_raise_for_status_failure_does_not_raise():
+    postings = [_posting()]
+
+    class BadResp:
+        def raise_for_status(self):
+            raise RuntimeError("Discord 429")
+
+    sent = send_notifications(
+        postings, "https://discord.example/webhook", per_run_cap=20,
+        post_fn=lambda *a, **k: BadResp(), sleep_fn=lambda s: None,
+    )
+    assert sent == 0
+
+
 def test_send_notifications_empty_list_sends_nothing():
     sent = send_notifications(
         [], "https://discord.example/webhook", per_run_cap=20,

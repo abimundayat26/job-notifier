@@ -1,3 +1,4 @@
+import json
 from datetime import date
 from pathlib import Path
 
@@ -12,7 +13,7 @@ from jobnotifier.config import (
     StateConfig,
 )
 from jobnotifier.failure import RunAbortedError
-from jobnotifier.models import Posting
+from jobnotifier.models import Posting, canonical_key
 from jobnotifier.sources.base import Source
 from jobnotifier import pipeline
 
@@ -148,6 +149,45 @@ def test_commit_true_runs_git_commit_step(tmp_path, monkeypatch):
     assert len(calls) == 1
     args, _ = calls[0]
     assert args[0] == state_path
+
+
+def test_state_persists_even_when_one_notification_fails_to_send(tmp_path, monkeypatch):
+    # Regression test: a Discord send failure partway through the batch must
+    # not prevent state from being saved, or a posting whose notification
+    # already went out gets treated as new and re-notified next run.
+    state_path = str(tmp_path / "seen_jobs.json")
+    config = _config(state_path)
+
+    seed_posting = _posting(title="Seed Role")
+    source = FakeSource("tier1:fake", [seed_posting])
+    monkeypatch.setattr(pipeline, "build_sources", lambda config: [source])
+    monkeypatch.setattr(pipeline.git_ops, "commit_and_push_state", lambda *a, **k: False)
+    pipeline.run_pipeline(config, today=date(2026, 8, 20))  # seed run
+
+    new_postings = [
+        _posting(title=f"Job {i}", url=f"https://example.com/job/new{i}") for i in range(3)
+    ]
+    source._postings = [seed_posting] + new_postings
+
+    def broken_send(postings, webhook_url, per_run_cap, **kwargs):
+        # Simulates a bug/failure in notify.send_notifications itself that
+        # escapes its own per-message error isolation (see test_notify.py) --
+        # state persistence must not be structurally dependent on this call
+        # succeeding.
+        raise ConnectionError("simulated failure in send_notifications")
+
+    monkeypatch.setattr(pipeline.notify, "send_notifications", broken_send)
+
+    with pytest.raises(ConnectionError):
+        pipeline.run_pipeline(config, today=date(2026, 8, 27))
+
+    assert Path(state_path).exists()
+    saved = json.loads(Path(state_path).read_text(encoding="utf-8"))
+    for posting in new_postings:
+        assert canonical_key(posting) in saved, (
+            f"{posting.title} missing from persisted state after a notify failure -- "
+            "it will be treated as new and re-notified next run"
+        )
 
 
 def test_failing_source_beyond_threshold_aborts(tmp_path, monkeypatch):

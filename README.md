@@ -3,8 +3,9 @@
 Personal, low-cost job-posting monitor. See [SPEC.md](SPEC.md) for the full design.
 
 Currently implemented:
-- **Tier 1** — public aggregator repos (e.g. SimplifyJobs' `Summer2026-Internships`
-  and `New-Grad-Positions`), read via the raw GitHub content CDN.
+- **Tier 1** — public aggregator repos (currently SimplifyJobs'
+  `Summer2027-Internships`, which also covers off-season internship postings —
+  see the comment in `config/config.yaml`), read via the raw GitHub content CDN.
 - **Tier 2** — ATS adapters (Greenhouse, Lever, Ashby), driven by a company→slug
   mapping in `config/config.yaml`. See `src/jobnotifier/sources/tier2_ats/`.
 - **Tier 3** — hand-written scrapers for proprietary career pages with no ATS API.
