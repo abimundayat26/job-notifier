@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+from jobnotifier import normalize
 from jobnotifier.models import Posting
 from jobnotifier.sources.base import Source
 from jobnotifier.sources.tier3_scrapers import _http
@@ -62,20 +63,23 @@ class CitadelSource(Source):
                 location_text = location_el.get_text(strip=True) if location_el else ""
                 locations = [loc.strip() for loc in location_text.split(",") if loc.strip()] or [""]
 
-                for location in locations:
-                    postings.append(
-                        Posting(
-                            company=self.company,
-                            title=title,
-                            location=location,
-                            url=url,
-                            date_posted=None,
-                            active=None,  # no listed/unlisted signal; absence-based closure in state.py handles it
-                            salary=None,
-                            source_id=self.source_id,
-                            extra={},
-                        )
+                # One listing can be posted open across several offices at
+                # once; merge them into a single Posting/notification instead
+                # of one per location (they share this same url/card -- it's
+                # one real job).
+                postings.append(
+                    Posting(
+                        company=self.company,
+                        title=title,
+                        location=normalize.merge_locations(locations),
+                        url=url,
+                        date_posted=None,
+                        active=None,  # no listed/unlisted signal; absence-based closure in state.py handles it
+                        salary=None,
+                        source_id=self.source_id,
+                        extra={},
                     )
+                )
         return postings
 
 

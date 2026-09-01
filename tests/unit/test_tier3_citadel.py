@@ -36,12 +36,12 @@ def test_parses_normal_entry():
     assert normal.source_id == "tier3:citadel"
 
 
-def test_multi_location_entry_explodes_into_one_posting_per_location():
+def test_multi_location_entry_merges_into_one_posting():
     raw = [_load_fixture("citadel_page1_sample.html")]
     postings = _make_source().parse(raw)
     grad_postings = [p for p in postings if p.title == "Software Engineer – University Graduate (US)"]
-    assert {p.location for p in grad_postings} == {"Greenwich", "Houston", "Miami", "New York"}
-    assert all(p.url == grad_postings[0].url for p in grad_postings)
+    assert len(grad_postings) == 1
+    assert grad_postings[0].location == "Greenwich; Houston; Miami; New York"
 
 
 class _FakeResponse:

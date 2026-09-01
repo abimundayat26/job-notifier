@@ -28,18 +28,13 @@ def test_fetch_url_uses_raw_cdn_not_contents_api():
     assert source.source_id == "tier1:SimplifyJobs/Summer2026-Internships"
 
 
-def test_multi_location_entry_explodes_into_one_posting_per_location():
+def test_multi_location_entry_merges_into_one_posting():
     raw = _load_fixture("summer2026_sample.json")
     postings = _make_source().parse(raw)
     citadel_postings = [p for p in postings if p.company == "Citadel"]
-    assert {p.location for p in citadel_postings} == {
-        "Greenwich, CT",
-        "Houston, TX",
-        "Miami, FL",
-        "NYC",
-    }
-    assert all(p.title == "Quantitative Researcher" for p in citadel_postings)
-    assert all(p.url == citadel_postings[0].url for p in citadel_postings)
+    assert len(citadel_postings) == 1
+    assert citadel_postings[0].location == "Greenwich, CT; Houston, TX; Miami, FL; NYC"
+    assert citadel_postings[0].title == "Quantitative Researcher"
 
 
 def test_active_flag_passed_through_unchanged():
@@ -77,14 +72,15 @@ def test_community_submitted_source_field_does_not_break_parsing():
     raw = _load_fixture("summer2026_sample.json")
     postings = _make_source().parse(raw)
     amazon_postings = [p for p in postings if p.company == "Amazon"]
-    assert len(amazon_postings) == 2  # exploded across two locations
+    assert len(amazon_postings) == 1  # merged across two locations
+    assert amazon_postings[0].location == "Dallas, TX; Herdon, VA"
     assert all(p.source_id == "tier1:SimplifyJobs/Summer2026-Internships" for p in amazon_postings)
 
 
 def test_newgrad_fixture_parses_without_terms_field():
     raw = _load_fixture("newgrad_sample.json")
     postings = _make_source().parse(raw)
-    assert len(postings) == 5  # 4 Citadel locations + 1 Mechanize
+    assert len(postings) == 2  # 1 merged Citadel + 1 Mechanize
     mechanize = next(p for p in postings if p.company == "Mechanize")
     assert mechanize.location == "SF"
     assert mechanize.active is False

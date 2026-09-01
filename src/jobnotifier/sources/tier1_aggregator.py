@@ -3,6 +3,7 @@ from typing import Any
 
 import requests
 
+from jobnotifier import normalize
 from jobnotifier.models import Posting
 from jobnotifier.sources.base import Source
 
@@ -43,26 +44,28 @@ class Tier1AggregatorSource(Source):
                     item["date_posted"], tz=timezone.utc
                 ).date()
 
+            # One listing can be posted open across several offices at once;
+            # merge them into a single Posting/notification instead of one
+            # per location (they share this same url -- it's one real job).
             locations = item.get("locations") or [""]
-            for location in locations:
-                postings.append(
-                    Posting(
-                        company=item.get("company_name", ""),
-                        title=item.get("title", ""),
-                        location=location,
-                        url=item.get("url", ""),
-                        date_posted=date_posted,
-                        active=item.get("active"),
-                        salary=None,
-                        source_id=self.source_id,
-                        extra={
-                            "category": item.get("category"),
-                            "degrees": item.get("degrees"),
-                            "sponsorship": item.get("sponsorship"),
-                            # Aggregator-internal id, kept for debugging only:
-                            # never used as/in our canonical dedup key.
-                            "aggregator_id": item.get("id"),
-                        },
-                    )
+            postings.append(
+                Posting(
+                    company=item.get("company_name", ""),
+                    title=item.get("title", ""),
+                    location=normalize.merge_locations(locations),
+                    url=item.get("url", ""),
+                    date_posted=date_posted,
+                    active=item.get("active"),
+                    salary=None,
+                    source_id=self.source_id,
+                    extra={
+                        "category": item.get("category"),
+                        "degrees": item.get("degrees"),
+                        "sponsorship": item.get("sponsorship"),
+                        # Aggregator-internal id, kept for debugging only:
+                        # never used as/in our canonical dedup key.
+                        "aggregator_id": item.get("id"),
+                    },
                 )
+            )
         return postings

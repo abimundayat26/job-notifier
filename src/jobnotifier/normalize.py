@@ -41,3 +41,14 @@ def location_matches_filter(location: str, filter_locations: list[str]) -> bool:
     """True if `location` normalizes to the same place as any configured filter entry."""
     normalized = normalize_location(location)
     return any(normalized == normalize_location(entry) for entry in filter_locations)
+
+
+def merge_locations(locations: list[str]) -> str:
+    """Combines one listing's multiple posted locations into a single display
+    string (e.g. for a source that reports one job open across several
+    offices), deduped and sorted for deterministic ordering -- so
+    canonical_key() stays stable even if a source reorders its own list
+    between fetches. Semicolon-separated since individual entries already
+    contain commas (e.g. "New York, NY")."""
+    cleaned = sorted({loc.strip() for loc in locations if loc and loc.strip()})
+    return "; ".join(cleaned)

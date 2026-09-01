@@ -23,3 +23,18 @@ def test_location_matches_filter_via_alias():
 
 def test_location_matches_filter_no_match():
     assert not normalize.location_matches_filter("Austin, TX", ["New York, NY", "Remote"])
+
+
+def test_merge_locations_dedupes_and_sorts():
+    assert normalize.merge_locations(["NYC", "Austin, TX", "NYC"]) == "Austin, TX; NYC"
+
+
+def test_merge_locations_order_independent():
+    # A source reordering its own list between fetches must not change the
+    # merged result, or canonical_key() would treat the same job as new.
+    assert normalize.merge_locations(["B", "A"]) == normalize.merge_locations(["A", "B"])
+
+
+def test_merge_locations_empty_list_is_empty_string():
+    assert normalize.merge_locations([""]) == ""
+    assert normalize.merge_locations([]) == ""
