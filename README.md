@@ -1,19 +1,34 @@
 # JobNotifier
 
-Personal, low-cost job-posting monitor. See [SPEC.md](SPEC.md) for the full design.
+I got tired of refreshing career pages, so this checks them for me. It watches a
+curated set of job sources and pings a Discord channel the moment something new
+and relevant shows up — runs entirely on free tiers (GitHub Actions, Discord
+webhooks), so it costs nothing to operate.
 
-Currently implemented:
-- **Tier 1** — public aggregator repos (currently SimplifyJobs'
-  `Summer2027-Internships`, which also covers off-season internship postings —
-  see the comment in `config/config.yaml`), read via the raw GitHub content CDN.
-- **Tier 2** — ATS adapters (Greenhouse, Lever, Ashby), driven by a company→slug
-  mapping in `config/config.yaml`. See `src/jobnotifier/sources/tier2_ats/`.
-- **Tier 3** — hand-written scrapers for proprietary career pages with no ATS API.
-  See `src/jobnotifier/sources/tier3_scrapers/`.
-- **Tier 4** — a plain manual-check list, not a fetched source: companies unresolved
-  by Tiers 1-3 go in `config.yaml` under `sources.tier4_manual` (validated on load —
-  no duplicates, no entry that also has a working Tier 2/3 row) and are checked by
-  hand. The pipeline never touches this list; see SPEC.md §4.
+It looks in four places, ordered by how much they're trusted to just work:
+- **Tier 1** — public aggregator repos on GitHub (currently SimplifyJobs'
+  `Summer2027-Internships`), pulled straight off the raw content CDN. Someone
+  else maintains these full-time, so it's the widest coverage for zero upkeep.
+- **Tier 2** — each company's own ATS API (Greenhouse, Lever, Ashby), mapped by
+  slug in `config/config.yaml`. A real API beats scraping every time, so this
+  is the default whenever a company's ATS exposes one.
+- **Tier 3** — a handful of hand-written scrapers for the proprietary career
+  pages that have no API at all. Kept deliberately small — every scraper here
+  is one more thing that silently breaks the next time a company redesigns
+  its site, so it's reserved for companies worth that maintenance cost.
+- **Tier 4** — everyone else: a plain list of companies to check by hand. Not
+  worth writing a scraper for a company with no API and no site worth
+  automating; the pipeline never touches this list, it's just a reminder.
+
+A few other choices that aren't obvious from the code:
+- **State is a JSON file committed to the repo, not a database.** No server to
+  host or pay for, and every state change already shows up as a normal git
+  commit — free history for free.
+- **A source that fails to fetch never marks its own jobs "closed."** Otherwise
+  one flaky day would close out everything from that source, and it'd all
+  come back as "new" and re-notify the moment the source recovers.
+- **Filtering is plain keyword rules, not an LLM.** Deterministic, free, and
+  doesn't need to guess what "relevant" means — you already know.
 
 ## Setup
 
