@@ -65,8 +65,13 @@ def test_each_tier2_ats_row_returns_postings_with_required_fields():
 
 
 def test_each_tier3_scraper_returns_postings_with_required_fields():
+    # tier3_scrapers is currently empty -- Citadel's scraper is implemented
+    # and tested but unconfigured after the site started returning a
+    # Cloudflare bot challenge (config/config.yaml's tier4_manual comment for
+    # "Citadel" has the detail) -- so this loop is a no-op until a working
+    # Tier 3 source is configured again, rather than a hard assertion like
+    # the tier1 test above.
     config = _load_test_config()
-    assert config.sources.tier3_scrapers, "no tier3 scrapers configured"
 
     for row in config.sources.tier3_scrapers:
         adapter_cls = COMPANY_ADAPTERS[row.company]

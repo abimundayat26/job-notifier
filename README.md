@@ -55,6 +55,11 @@ pytest -m live tests/live  # hits real sources; run manually or via the
                             # scheduled live-smoke-test workflow
 ```
 
+The offline suite checks logic against fixtures; only the live one proves a
+source hasn't quietly started blocking or reshaping its responses, since a
+broken source otherwise just fails silently in production (it's logged and
+skipped, not alerted on) until the live test is run against it.
+
 ## Deployment
 
 Runs as a scheduled GitHub Actions workflow (`.github/workflows/run.yml`) on a

@@ -23,11 +23,21 @@ sources:
     - platform: lever
       company: "Palantir"
       slug: "palantir"
-  tier3_scrapers:
-    - company: "citadel"
-      fetch_method: http
-      sort_order: relevance   # no date field exists to sort by; pagination is mandatory (SPEC.md §11)
+  tier3_scrapers: []
   tier4_manual:
+    # Citadel: /careers/open-opportunities/ started returning a genuine
+    # interactive Cloudflare JS challenge (Cf-Mitigated: challenge, a "Just a
+    # moment..." page) sometime after the Tier 3 scraper (src/jobnotifier/
+    # sources/tier3_scrapers/citadel.py) was written and verified against a
+    # plain server-rendered response -- it silently 403'd on every single
+    # production run from the day it was added (2026-08-31) through
+    # 2026-09-02, when live-testing caught it. Moved here rather than reached
+    # for Playwright, for the same reason as Citadel Securities below: a
+    # headless browser isn't a reliable way past an active bot challenge, and
+    # trying to defeat one outright cuts against this project's scraping
+    # policy (SPEC.md §11 is about politeness, not evasion). The scraper code
+    # and its tests are left in place in case Citadel drops the challenge.
+    - "Citadel"
     # Citadel Securities: /careers/open-opportunities/ (and even /robots.txt)
     # returns a genuine interactive Cloudflare JS challenge -- plain HTTP
     # scraping doesn't work, and Playwright isn't guaranteed to pass it from

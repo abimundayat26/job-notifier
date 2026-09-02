@@ -70,7 +70,11 @@ HTML scraping is the anti-pattern** and is used only where nothing else works.
   career pages with no ATS API, specifically the quant-shop employers the user cares
   about most: Citadel, Citadel Securities, Two Sigma, D. E. Shaw, Palantir. Each scraper
   is a deliberate, individually-justified cost added ad hoc — this tier is explicitly
-  not meant to grow into a general scraping framework.
+  not meant to grow into a general scraping framework. In practice this list is aspirational,
+  not a literal roster: Palantir resolved via a Tier 2 Lever board instead (§16), and
+  Citadel's scraper — while still implemented and tested — is currently unconfigured
+  because the site started returning a Cloudflare bot challenge (§4's Tier 4 entry for
+  it has the detail); a scraper only earns its slot here for as long as it actually works.
 - **Tier 4 — Manual-check list**: Any employer not resolved by Tiers 1–3 goes on a plain
   list the user checks by hand, rather than expanding Tier 3.
 

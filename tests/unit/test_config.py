@@ -17,9 +17,12 @@ def test_load_real_config_yaml(monkeypatch):
     assert len(config.sources.tier2_ats) == 1
     assert config.sources.tier2_ats[0].company == "Palantir"
 
-    assert len(config.sources.tier3_scrapers) == 1
-    assert config.sources.tier3_scrapers[0].company == "citadel"
+    # Citadel's Tier 3 scraper is implemented and tested but currently
+    # unconfigured -- the site started returning a Cloudflare bot challenge,
+    # so it moved to tier4_manual (see config.yaml's comment there).
+    assert config.sources.tier3_scrapers == []
 
+    assert "Citadel" in config.sources.tier4_manual
     assert "Citadel Securities" in config.sources.tier4_manual
     assert "D. E. Shaw" in config.sources.tier4_manual
 
