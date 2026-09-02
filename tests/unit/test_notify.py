@@ -1,7 +1,20 @@
 from datetime import date
 
+from jobnotifier.config import NotificationConfig
 from jobnotifier.models import Posting, canonical_key
-from jobnotifier.notify import build_message, send_notifications
+from jobnotifier.notify import build_message, classify_channel, send_channeled_notifications, send_notifications
+
+
+def _notification_config(**overrides) -> NotificationConfig:
+    defaults = dict(
+        summer_webhook_url="https://discord.example/summer",
+        off_season_webhook_url="https://discord.example/off-season",
+        per_channel_cap=10,
+        summer_term="Summer 2027",
+        exclude_exact_terms=["Fall 2026"],
+    )
+    defaults.update(overrides)
+    return NotificationConfig(**defaults)
 
 
 def _posting(**overrides):
@@ -132,3 +145,94 @@ def test_send_notifications_empty_list_sends_nothing():
         sleep_fn=lambda s: (_ for _ in ()).throw(AssertionError("should not be called")),
     )
     assert sent == 0
+
+
+def test_classify_channel_summer_term_goes_to_summer():
+    config = _notification_config()
+    posting = _posting(terms=["Summer 2027"])
+    assert classify_channel(posting, config) == "summer"
+
+
+def test_classify_channel_off_season_term_goes_to_off_season():
+    config = _notification_config()
+    assert classify_channel(_posting(terms=["Spring 2027"]), config) == "off_season"
+    assert classify_channel(_posting(terms=["Winter 2027"]), config) == "off_season"
+
+
+def test_classify_channel_no_term_defaults_to_summer():
+    # Non-internship sources (Palantir, Citadel) never populate `terms` at all.
+    config = _notification_config()
+    assert classify_channel(_posting(terms=[]), config) == "summer"
+
+
+def test_classify_channel_excludes_lone_fall_2026():
+    config = _notification_config()
+    assert classify_channel(_posting(terms=["Fall 2026"]), config) is None
+
+
+def test_classify_channel_fall_2026_plus_summer_is_not_excluded():
+    # A rolling multi-term listing tagged both Fall 2026 and Summer 2027 --
+    # the exclusion only fires when Fall 2026 is the posting's *only* term.
+    config = _notification_config()
+    assert classify_channel(_posting(terms=["Fall 2026", "Summer 2027"]), config) == "summer"
+
+
+def test_classify_channel_fall_2026_plus_other_off_season_term_is_not_excluded():
+    config = _notification_config()
+    assert classify_channel(_posting(terms=["Fall 2026", "Winter 2027"]), config) == "off_season"
+
+
+def test_classify_channel_summer_term_match_is_case_insensitive():
+    config = _notification_config()
+    assert classify_channel(_posting(terms=["summer 2027"]), config) == "summer"
+
+
+def test_send_channeled_notifications_routes_to_correct_webhook():
+    config = _notification_config()
+    postings = [
+        _posting(title="Summer Role", terms=["Summer 2027"], url="https://example.com/1"),
+        _posting(title="Off-Season Role", terms=["Spring 2027"], url="https://example.com/2"),
+        _posting(title="Excluded Role", terms=["Fall 2026"], url="https://example.com/3"),
+    ]
+
+    calls_by_url: dict[str, list] = {}
+
+    class OkResp:
+        def raise_for_status(self):
+            pass
+
+    def fake_post(url, json, timeout):
+        calls_by_url.setdefault(url, []).append(json)
+        return OkResp()
+
+    summer_sent, off_season_sent = send_channeled_notifications(
+        postings, config, post_fn=fake_post, sleep_fn=lambda s: None,
+    )
+
+    assert summer_sent == 1
+    assert off_season_sent == 1
+    assert len(calls_by_url[config.summer_webhook_url]) == 1
+    assert len(calls_by_url[config.off_season_webhook_url]) == 1
+    assert calls_by_url[config.summer_webhook_url][0]["embeds"][0]["title"] == "Summer Role"
+    assert calls_by_url[config.off_season_webhook_url][0]["embeds"][0]["title"] == "Off-Season Role"
+
+
+def test_send_channeled_notifications_caps_each_channel_independently():
+    config = _notification_config(per_channel_cap=1)
+    postings = [
+        _posting(title="Summer 1", terms=["Summer 2027"]),
+        _posting(title="Summer 2", terms=["Summer 2027"]),
+        _posting(title="Off-Season 1", terms=["Spring 2027"]),
+        _posting(title="Off-Season 2", terms=["Spring 2027"]),
+    ]
+
+    class OkResp:
+        def raise_for_status(self):
+            pass
+
+    summer_sent, off_season_sent = send_channeled_notifications(
+        postings, config, post_fn=lambda *a, **k: OkResp(), sleep_fn=lambda s: None,
+    )
+
+    assert summer_sent == 1
+    assert off_season_sent == 1

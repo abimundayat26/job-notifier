@@ -113,9 +113,10 @@ are unconfirmed guesses.
    **without sending any notifications** — prevents a flood of "new" alerts for jobs that were already posted.
    The seed window is limited to postings dated within the last 30 days 
    (configurable, and separate from the 7-day freshness filter used on normal runs)
-- **Per-run notification cap**: independent of seed mode, a configured maximum number of
-  Discord messages per run prevents a large batch of genuinely new postings (e.g. a
-  company posting many roles at once) from flooding the channel.
+- **Per-channel notification cap**: independent of seed mode, a configured maximum
+  number of Discord messages per run, applied independently to each of the two
+  channels (§10), prevents a large batch of genuinely new postings (e.g. a company
+  posting many roles at once) from flooding either channel.
 
 ## 8. Filtering
 
@@ -166,10 +167,18 @@ Keyword/rule-based only, applied after dedup and the freshness filter:
 
 ## 10. Notifications
 
-- **Channel**: a single Discord webhook.
+- **Channels**: two Discord webhooks, split by a posting's term (`Posting.terms`, only
+  ever populated by the Tier 1 aggregator feed) — one for `summer_term` (default
+  `"Summer 2027"`), one for everything else. A posting with no term at all (e.g. the
+  non-internship Tier 2/3 sources) defaults to the summer channel. A posting whose
+  *entire* term set is exactly one of `exclude_exact_terms` (default: a lone
+  `"Fall 2026"`) is dropped — not sent to either channel — rather than treated as
+  off-season; a posting tagged with an excluded term *plus* something else is not
+  excluded.
 - **Granularity**: one message per new/reopened posting that passes filtering, not a
   digest — sends are throttled/spaced out to stay under Discord's ~30 messages/minute
-  webhook rate limit, and bounded by the per-run notification cap (§7).
+  webhook rate limit. `per_channel_cap` (§7) bounds each channel independently, not
+  their combined total.
 - **Message fields**: title, company, location/remote status, application link, source,
   posted date (when available), salary (when available), and the **canonical job key**
   (as a short ID line or URL fragment), so any message can be traced back to its
@@ -260,8 +269,11 @@ filters:
   seniority_exclude: ["senior", "staff", "principal"]
 
 notification:
-  discord_webhook_url: "${DISCORD_WEBHOOK_URL}"   # GitHub Actions secret
-  per_run_cap: 20
+  summer_webhook_url: "${DISCORD_WEBHOOK_URL_SUMMER}"           # GitHub Actions secret
+  off_season_webhook_url: "${DISCORD_WEBHOOK_URL_OFF_SEASON}"   # GitHub Actions secret
+  per_channel_cap: 10
+  summer_term: "Summer 2027"
+  exclude_exact_terms: ["Fall 2026"]
 
 state:
   path: "state/seen_jobs.json"

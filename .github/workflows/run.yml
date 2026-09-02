@@ -34,5 +34,6 @@ jobs:
 
       - name: Run pipeline
         env:
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL_SUMMER: ${{ secrets.DISCORD_WEBHOOK_URL_SUMMER }}
+          DISCORD_WEBHOOK_URL_OFF_SEASON: ${{ secrets.DISCORD_WEBHOOK_URL_OFF_SEASON }}
         run: python run.py

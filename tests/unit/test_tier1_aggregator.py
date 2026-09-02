@@ -75,6 +75,32 @@ def test_terms_field_becomes_posting_term():
     assert tiktok.term == "Summer 2026"
 
 
+def test_terms_field_keeps_raw_list_for_channel_routing():
+    raw = _load_fixture("summer2026_sample.json")
+    postings = _make_source().parse(raw)
+    tiktok = next(p for p in postings if p.company == "TikTok")
+    assert tiktok.terms == ["Summer 2026"]
+
+
+def test_multi_term_rolling_posting_keeps_full_raw_list():
+    # A rolling-program listing tagged with more than one term -- notify.py's
+    # channel routing needs the full raw list, not just the joined display
+    # string, to tell "only Fall 2026" apart from "Fall 2026 plus something
+    # else".
+    raw = [
+        {
+            "company_name": "Rolling Co",
+            "title": "Software Engineer Intern",
+            "terms": ["Fall 2026", "Summer 2027"],
+            "url": "https://example.com/rolling",
+            "locations": ["Remote"],
+        }
+    ]
+    postings = _make_source().parse(raw)
+    assert postings[0].terms == ["Fall 2026", "Summer 2027"]
+    assert postings[0].term == "Fall 2026, Summer 2027"
+
+
 def test_community_submitted_source_field_does_not_break_parsing():
     raw = _load_fixture("summer2026_sample.json")
     postings = _make_source().parse(raw)

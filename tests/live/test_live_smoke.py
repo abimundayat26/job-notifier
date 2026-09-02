@@ -20,7 +20,8 @@ REQUIRED_FIELDS = ("company", "title", "url")
 
 
 def _load_test_config():
-    os.environ.setdefault("DISCORD_WEBHOOK_URL", "https://discord.com/api/webhooks/placeholder/placeholder")
+    os.environ.setdefault("DISCORD_WEBHOOK_URL_SUMMER", "https://discord.com/api/webhooks/placeholder/placeholder")
+    os.environ.setdefault("DISCORD_WEBHOOK_URL_OFF_SEASON", "https://discord.com/api/webhooks/placeholder/placeholder")
     return load_config("config/config.yaml")
 
 

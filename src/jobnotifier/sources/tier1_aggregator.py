@@ -50,8 +50,11 @@ class Tier1AggregatorSource(Source):
             locations = item.get("locations") or [""]
 
             # "terms" is a list (e.g. ["Summer 2027"], sometimes several for a
-            # rolling program) -- display-only, joined as-is; absent/empty
-            # means term=None so notify.py's Term field just doesn't show.
+            # rolling program). `term` is the display-only joined string
+            # (absent/empty means term=None so notify.py's Term field just
+            # doesn't show); `terms` keeps the raw list for notify.py's
+            # summer/off-season channel routing, which needs to distinguish
+            # "only Fall 2026" from "Fall 2026 plus something else".
             terms = item.get("terms") or []
             term = ", ".join(terms) or None
 
@@ -65,6 +68,7 @@ class Tier1AggregatorSource(Source):
                     active=item.get("active"),
                     salary=None,
                     term=term,
+                    terms=terms,
                     source_id=self.source_id,
                     extra={
                         "category": item.get("category"),

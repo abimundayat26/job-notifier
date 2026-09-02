@@ -59,17 +59,15 @@ def run_pipeline(config: Config, today: date | None = None) -> int:
 
     # State is computed above from what was actually fetched, independent of
     # whether Discord delivery succeeds -- it must always be persisted, even
-    # if send_notifications raises unexpectedly, or a posting whose
+    # if send_channeled_notifications raises unexpectedly, or a posting whose
     # notification already went out would never get recorded as seen and
     # would be re-sent as a duplicate next run. notify.send_notifications
     # already isolates per-message failures internally (SPEC.md §10); this
     # `finally` is defense in depth against a failure that escapes it anyway.
-    sent = 0
+    summer_sent = off_season_sent = 0
     try:
-        sent = notify.send_notifications(
-            to_notify,
-            config.notification.discord_webhook_url,
-            config.notification.per_run_cap,
+        summer_sent, off_season_sent = notify.send_channeled_notifications(
+            to_notify, config.notification
         )
     finally:
         state_module.save_state(config.state.path, new_state)
@@ -78,10 +76,13 @@ def run_pipeline(config: Config, today: date | None = None) -> int:
                 config.state.path, f"Update job state ({today.isoformat()})"
             )
 
+    sent = summer_sent + off_season_sent
     logger.info(
-        "run complete: %d candidates, %d notified, %d state entries",
+        "run complete: %d candidates, %d notified (%d summer / %d off-season), %d state entries",
         len(candidates),
         sent,
+        summer_sent,
+        off_season_sent,
         len(new_state),
     )
     return sent

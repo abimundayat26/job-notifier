@@ -74,8 +74,17 @@ filters:
   seniority_exclude: ["senior", "staff", "principal"]
 
 notification:
-  discord_webhook_url: "${DISCORD_WEBHOOK_URL}"
-  per_run_cap: 20
+  # Two channels, split by term (Posting.terms, only ever populated by the
+  # Tier 1 SimplifyJobs feed): a posting tagged "Summer 2027" -- or with no
+  # term at all, e.g. Palantir/Citadel -- goes to summer_webhook_url;
+  # anything else (Spring/Winter/other off-season terms) goes to
+  # off_season_webhook_url. A posting whose *only* term is one of
+  # exclude_exact_terms (a lone "Fall 2026") is dropped entirely.
+  summer_webhook_url: "${DISCORD_WEBHOOK_URL_SUMMER}"
+  off_season_webhook_url: "${DISCORD_WEBHOOK_URL_OFF_SEASON}"
+  per_channel_cap: 10 # applies independently to each channel, not combined
+  summer_term: "Summer 2027"
+  exclude_exact_terms: ["Fall 2026"]
 
 state:
   path: "state/seen_jobs.json"

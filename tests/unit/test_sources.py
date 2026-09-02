@@ -13,7 +13,10 @@ def _config(**sources_kwargs) -> Config:
     return Config(
         sources=SourcesConfig(**sources_kwargs),
         filters=FiltersConfig(),
-        notification=NotificationConfig(discord_webhook_url="https://discord.example/webhook"),
+        notification=NotificationConfig(
+            summer_webhook_url="https://discord.example/summer",
+            off_season_webhook_url="https://discord.example/off-season",
+        ),
         state=StateConfig(),
         failure=FailureConfig(),
     )

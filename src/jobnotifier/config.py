@@ -71,8 +71,19 @@ class FiltersConfig:
 
 @dataclass(frozen=True)
 class NotificationConfig:
-    discord_webhook_url: str
-    per_run_cap: int = 20
+    """Two Discord channels, split by a posting's term (Posting.terms):
+    postings tagged with `summer_term` -- or with no term at all, e.g. the
+    non-internship Palantir/Citadel sources -- go to summer_webhook_url;
+    everything else goes to off_season_webhook_url. A posting whose *only*
+    term is one of exclude_exact_terms (e.g. a lone "Fall 2026") is dropped
+    entirely rather than sent to either channel. per_channel_cap applies
+    independently to each channel, not to the combined total."""
+
+    summer_webhook_url: str
+    off_season_webhook_url: str
+    per_channel_cap: int = 10
+    summer_term: str = "Summer 2027"
+    exclude_exact_terms: list[str] = field(default_factory=lambda: ["Fall 2026"])
 
 
 @dataclass(frozen=True)
@@ -218,8 +229,11 @@ def load_config(path: str | Path) -> Config:
 
     notification_raw = raw.get("notification", {})
     notification = NotificationConfig(
-        discord_webhook_url=_require(notification_raw, "discord_webhook_url", "notification"),
-        per_run_cap=notification_raw.get("per_run_cap", 20),
+        summer_webhook_url=_require(notification_raw, "summer_webhook_url", "notification"),
+        off_season_webhook_url=_require(notification_raw, "off_season_webhook_url", "notification"),
+        per_channel_cap=notification_raw.get("per_channel_cap", 10),
+        summer_term=notification_raw.get("summer_term", "Summer 2027"),
+        exclude_exact_terms=notification_raw.get("exclude_exact_terms", ["Fall 2026"]),
     )
 
     state_raw = raw.get("state", {})

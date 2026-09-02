@@ -1,9 +1,11 @@
 # JobNotifier
 
 I got tired of refreshing career pages, so this checks them for me. It watches a
-curated set of job sources and pings a Discord channel the moment something new
-and relevant shows up — runs entirely on free tiers (GitHub Actions, Discord
-webhooks), so it costs nothing to operate.
+curated set of job sources and pings Discord the moment something new and
+relevant shows up — split across two channels, Summer 2027 internships and
+everything off-season, since they're different enough to not want mixed
+together. Runs entirely on free tiers (GitHub Actions, Discord webhooks), so
+it costs nothing to operate.
 
 It looks in four places, ordered by how much they're trusted to just work:
 - **Tier 1** — public aggregator repos on GitHub (currently SimplifyJobs'
@@ -34,13 +36,14 @@ A few other choices that aren't obvious from the code:
 
 ```
 pip install -e ".[dev]"
-cp .env.example .env   # fill in your Discord webhook URL, then export it
+cp .env.example .env   # fill in your two Discord webhook URLs, then export them
 ```
 
 ## Running locally
 
 ```
-export DISCORD_WEBHOOK_URL="<your webhook url>"
+export DISCORD_WEBHOOK_URL_SUMMER="<summer channel webhook url>"
+export DISCORD_WEBHOOK_URL_OFF_SEASON="<off-season channel webhook url>"
 python run.py
 ```
 
@@ -56,5 +59,5 @@ pytest -m live tests/live  # hits real sources; run manually or via the
 
 Runs as a scheduled GitHub Actions workflow (`.github/workflows/run.yml`) on a
 **private** repo, every 4 hours. State (`state/seen_jobs.json`) is committed
-back to `main` by the workflow itself. Requires a `DISCORD_WEBHOOK_URL` repo
-secret.
+back to `main` by the workflow itself. Requires `DISCORD_WEBHOOK_URL_SUMMER`
+and `DISCORD_WEBHOOK_URL_OFF_SEASON` repo secrets.

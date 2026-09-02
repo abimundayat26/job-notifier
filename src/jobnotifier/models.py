@@ -16,6 +16,7 @@ class Posting:
     active: bool | None = None
     salary: str | None = None
     term: str | None = None  # e.g. "Summer 2027" -- display-only, not part of canonical_key
+    terms: list[str] = field(default_factory=list)  # raw per-term list backing `term`; used for notify.py's channel routing
     source_id: str = ""
     extra: dict = field(default_factory=dict)
 

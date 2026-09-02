@@ -36,7 +36,10 @@ def _config(state_path: str, commit: bool = False) -> Config:
     return Config(
         sources=SourcesConfig(),
         filters=FiltersConfig(),
-        notification=NotificationConfig(discord_webhook_url="https://discord.example/webhook", per_run_cap=20),
+        notification=NotificationConfig(
+            summer_webhook_url="https://discord.example/summer",
+            off_season_webhook_url="https://discord.example/off-season",
+        ),
         state=StateConfig(path=state_path, retention_days=30, seed_window_days=30, commit=commit),
         failure=FailureConfig(abort_threshold_pct=50),
     )
@@ -60,11 +63,11 @@ def _patch_pipeline_dependencies(monkeypatch, sources, sent_notifications):
     monkeypatch.setattr(pipeline, "build_sources", lambda config: sources)
     monkeypatch.setattr(pipeline.git_ops, "commit_and_push_state", lambda *a, **k: False)
 
-    def fake_send(postings, webhook_url, per_run_cap, **kwargs):
-        sent_notifications.extend(postings[:per_run_cap])
-        return min(len(postings), per_run_cap)
+    def fake_send(postings, config, **kwargs):
+        sent_notifications.extend(postings)
+        return len(postings), 0
 
-    monkeypatch.setattr(pipeline.notify, "send_notifications", fake_send)
+    monkeypatch.setattr(pipeline.notify, "send_channeled_notifications", fake_send)
 
 
 def test_first_run_seeds_silently(tmp_path, monkeypatch):
@@ -169,14 +172,14 @@ def test_state_persists_even_when_one_notification_fails_to_send(tmp_path, monke
     ]
     source._postings = [seed_posting] + new_postings
 
-    def broken_send(postings, webhook_url, per_run_cap, **kwargs):
-        # Simulates a bug/failure in notify.send_notifications itself that
-        # escapes its own per-message error isolation (see test_notify.py) --
-        # state persistence must not be structurally dependent on this call
+    def broken_send(postings, config, **kwargs):
+        # Simulates a bug/failure in notify.send_channeled_notifications itself
+        # that escapes its own per-message error isolation (see test_notify.py)
+        # -- state persistence must not be structurally dependent on this call
         # succeeding.
-        raise ConnectionError("simulated failure in send_notifications")
+        raise ConnectionError("simulated failure in send_channeled_notifications")
 
-    monkeypatch.setattr(pipeline.notify, "send_notifications", broken_send)
+    monkeypatch.setattr(pipeline.notify, "send_channeled_notifications", broken_send)
 
     with pytest.raises(ConnectionError):
         pipeline.run_pipeline(config, today=date(2026, 8, 27))

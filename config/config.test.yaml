@@ -18,8 +18,9 @@ filters:
   seniority_exclude: ["senior", "staff", "principal"]
 
 notification:
-  discord_webhook_url: "${DISCORD_WEBHOOK_URL}"
-  per_run_cap: 20
+  summer_webhook_url: "${DISCORD_WEBHOOK_URL_SUMMER}"
+  off_season_webhook_url: "${DISCORD_WEBHOOK_URL_OFF_SEASON}"
+  per_channel_cap: 10
 
 state:
   path: "state/test-seen_jobs.json"
