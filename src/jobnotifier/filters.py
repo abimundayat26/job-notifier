@@ -14,7 +14,7 @@ def _keyword_matches(title_lower: str, keyword: str) -> bool:
     # free. Single-word keywords (especially short abbreviations like "swe"/
     # "sde") get word-boundary matching instead -- plain substring matching
     # on those false-positives inside unrelated words, e.g. "swe" inside
-    # "Swedish" (SPEC has no fuzzy matching elsewhere either; this keeps that
+    # "Swedish" (there is no fuzzy matching elsewhere either; this keeps that
     # spirit while fixing the one class of false positive substrings cause).
     kw_lower = keyword.lower()
     if " " in kw_lower:
@@ -32,9 +32,9 @@ def _is_remote(location: str) -> bool:
 
 
 def passes_filters(posting: Posting, filters: FiltersConfig) -> bool:
-    """Applies SPEC.md §8's keyword/location/remote/seniority rules.
+    """Applies the keyword/location/remote/seniority filter rules.
 
-    Salary is intentionally never consulted here — display-only per spec.
+    Salary is intentionally never consulted here — display-only.
     """
     if filters.title_include and not _title_contains_any(posting.title, filters.title_include):
         return False
@@ -52,7 +52,7 @@ def passes_filters(posting: Posting, filters: FiltersConfig) -> bool:
 
 
 def passes_freshness(posting: Posting, today: date, window_days: int = FRESHNESS_WINDOW_DAYS) -> bool:
-    """A posting with no date is never freshness-filtered out (SPEC.md §6) —
+    """A posting with no date is never freshness-filtered out —
     absence of a date is handled upstream by state.py's seed/reopen logic."""
     if posting.date_posted is None:
         return True

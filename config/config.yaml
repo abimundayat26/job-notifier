@@ -14,12 +14,12 @@ sources:
   # collapse only -- no alias table, unlike normalize_location). A mismatch
   # doesn't error; it just creates two separate state entries for the same
   # real job, so you get a duplicate notification instead of a merged one.
-  # This is the accepted failure mode (SPEC.md §9: ambiguous matches never
-  # silently collapse) but it's worth getting right when adding a row.
+  # This is the accepted failure mode (ambiguous matches are never
+  # silently collapsed) but it's worth getting right when adding a row.
   tier2_ats:
     # Palantir has a live public Lever board (confirmed 2026-08-30 via
     # api.lever.co/v0/postings/palantir) -- no Tier 3 scraper needed despite
-    # SPEC.md §4 listing it as a Tier 3 target.
+    # it being listed as a Tier 3 candidate.
     - platform: lever
       company: "Palantir"
       slug: "palantir"
@@ -35,7 +35,7 @@ sources:
     # for Playwright, for the same reason as Citadel Securities below: a
     # headless browser isn't a reliable way past an active bot challenge, and
     # trying to defeat one outright cuts against this project's scraping
-    # policy (SPEC.md §11 is about politeness, not evasion). The scraper code
+    # policy (politeness, not evasion). The scraper code
     # and its tests are left in place in case Citadel drops the challenge.
     - "Citadel"
     # Citadel Securities: /careers/open-opportunities/ (and even /robots.txt)
@@ -46,7 +46,7 @@ sources:
     # D. E. Shaw: careers page doesn't server-render listings, and its own JS
     # bundle references /recruit/, which robots.txt explicitly disallows --
     # the real job data likely sits behind a path our own politeness policy
-    # (SPEC.md §11) forbids fetching. Confirmed 2026-08-30.
+    # forbids fetching. Confirmed 2026-08-30.
     - "D. E. Shaw"
 
 filters:

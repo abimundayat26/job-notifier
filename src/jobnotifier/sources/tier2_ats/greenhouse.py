@@ -12,7 +12,7 @@ class GreenhouseSource(Source):
     """Reads a company's public Greenhouse job board API.
 
     No published-date field distinct from `updated_at` is exposed by this
-    endpoint, so `date_posted` is always None here (SPEC.md §6: `updated_at`
+    endpoint, so `date_posted` is always None here (`updated_at`
     is never used as a posting date, since a content edit bumping it would
     incorrectly resurface a stale posting as newly relevant). Freshness for
     Greenhouse postings relies entirely on state.py's new-key / closed->open

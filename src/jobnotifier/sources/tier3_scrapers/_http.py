@@ -1,4 +1,4 @@
-"""Politeness helpers shared by Tier 3 scrapers only (SPEC.md §11): an
+"""Politeness helpers shared by Tier 3 scrapers only: an
 identifying User-Agent, per-domain rate limiting, and robots.txt compliance.
 Not a general scraping framework -- just enough shared plumbing that each of
 the (at most 5) bespoke parsers doesn't reimplement the same three checks.

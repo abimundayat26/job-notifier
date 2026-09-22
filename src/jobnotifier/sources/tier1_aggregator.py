@@ -37,7 +37,7 @@ class Tier1AggregatorSource(Source):
         for item in raw:
             date_posted = None
             if item.get("date_posted"):
-                # date_updated is never read as a posting date (SPEC.md §6):
+                # date_updated is never read as a posting date:
                 # a content edit bumps it and would incorrectly resurface a
                 # stale posting as newly relevant.
                 date_posted = datetime.fromtimestamp(

@@ -1,4 +1,4 @@
-"""Live smoke test (SPEC.md §13): hits the real aggregator repos on a
+"""Live smoke test: hits the real aggregator repos on a
 schedule, separate from normal CI, to catch silent source breakage that the
 main pipeline's log-and-continue failure handling would otherwise miss
 silently. Run explicitly with `pytest -m live`; excluded from the default
@@ -47,9 +47,9 @@ def test_each_tier1_aggregator_returns_postings_with_required_fields():
 
 def test_each_tier2_ats_row_returns_postings_with_required_fields():
     # tier2_ats starts empty until real, hand-verified company rows are added
-    # (SPEC.md §13: an unverified slug would 404 and look identical to real
-    # source breakage), so this loop is a no-op until then rather than a
-    # hard assertion like the tier1 test above.
+    # (an unverified slug would 404 and look identical to real source
+    # breakage), so this loop is a no-op until then rather than a hard
+    # assertion like the tier1 test above.
     config = _load_test_config()
 
     for row in config.sources.tier2_ats:

@@ -10,7 +10,7 @@ from jobnotifier.models import Posting, canonical_key
 logger = logging.getLogger(__name__)
 
 # Discord webhooks are rate-limited to ~30 messages/minute; 2.5s spacing
-# keeps a comfortable margin under that (SPEC.md §10).
+# keeps a comfortable margin under that.
 THROTTLE_SECONDS = 2.5
 
 # A merged multi-location posting (normalize.merge_locations) can run to
@@ -62,7 +62,7 @@ def send_notifications(
     post_fn: Callable = requests.post,
     sleep_fn: Callable[[float], None] = time.sleep,
 ) -> int:
-    """Sends one Discord message per posting, capped and throttled per SPEC.md §10.
+    """Sends one Discord message per posting, capped and throttled.
     Returns the number of notifications actually sent.
 
     A single posting's send failing (a transient network error, a Discord
@@ -93,7 +93,7 @@ def send_notifications(
 def classify_channel(posting: Posting, config: NotificationConfig) -> str | None:
     """Routes a posting to "summer" or "off_season", or excludes it (None).
 
-    Only Tier 1 aggregator postings carry `terms` at all (SPEC.md §16's
+    Only Tier 1 aggregator postings carry `terms` at all (the
     summer_term/exclude_exact_terms describe that vocabulary) -- a posting
     with no term info, e.g. Palantir/Citadel's non-internship boards, has no
     way to tell summer from off-season and defaults to the summer channel.

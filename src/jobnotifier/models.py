@@ -26,7 +26,7 @@ def canonical_key(posting: Posting) -> str:
 
     Exact match on normalized strings only — no fuzzy matching. Anything
     that doesn't normalize identically stays a distinct key, so ambiguous
-    matches never silently collapse (SPEC.md §9).
+    matches never silently collapse.
     """
     company = normalize.normalize_company(posting.company)
     title = normalize.normalize_title(posting.title)

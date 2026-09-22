@@ -68,8 +68,8 @@ def test_is_us_location_remote_in_usa_variants():
 
 
 def test_is_us_location_bare_remote_is_ambiguous_and_not_excluded():
-    # No country signal at all -- SPEC.md §9's ambiguity philosophy applied
-    # to filtering: don't guess it's non-US and silently drop it.
+    # No country signal at all -- the ambiguity rule applied to filtering:
+    # don't guess it's non-US and silently drop it.
     assert normalize.is_us_location("Remote")
 
 

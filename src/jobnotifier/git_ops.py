@@ -16,7 +16,7 @@ def commit_and_push_state(
 ) -> bool:
     """Commits and pushes the state file to main. On a push rejection
     (e.g. a manual commit landed between fetch and push), rebases onto
-    origin/main and retries rather than failing the run (SPEC.md §14).
+    origin/main and retries rather than failing the run.
 
     Returns False if there was nothing to commit, True if a commit was pushed.
     """

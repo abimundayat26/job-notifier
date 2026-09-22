@@ -1,6 +1,6 @@
 class RunAbortedError(RuntimeError):
     """Raised when more than the configured threshold of sources failed to
-    fetch in a single run (SPEC.md §12). The caller should let this propagate
+    fetch in a single run. The caller should let this propagate
     out of run.py as a nonzero exit — that exit code IS the alerting
     mechanism; no custom notification is sent for this condition."""
 

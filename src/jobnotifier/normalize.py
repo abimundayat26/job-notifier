@@ -46,8 +46,8 @@ _US_TOKENS: set[str] = {"united states", "usa", "us"}
 # Matches "remote" with an optional explicit country qualifier, e.g. "remote
 # in usa", "remote - canada", "remote (uk)". A bare "remote" (no qualifier)
 # has no country signal at all -- treated as ambiguous, not excluded, rather
-# than guessing (SPEC.md §9's dedup ambiguity philosophy applied to
-# filtering: prefer letting an uncertain match through).
+# than guessing (the dedup ambiguity rule applied to filtering: prefer
+# letting an uncertain match through).
 _REMOTE_RE = re.compile(r"\bremote\b")
 _REMOTE_QUALIFIER_RE = re.compile(r"remote\s*(?:in|-|\()\s*([a-z .]+?)\)?$")
 
@@ -99,7 +99,7 @@ def _sub_location_indicates_us(part: str) -> bool:
 
 
 def is_us_location(location: str) -> bool:
-    """True if `location` indicates a US location, per SPEC.md §8's
+    """True if `location` indicates a US location, per the
     country-level filter.
 
     A location merged across several offices (merge_locations) passes if

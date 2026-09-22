@@ -62,7 +62,7 @@ skipped, not alerted on) until the live test is run against it.
 
 ## Deployment
 
-Runs as a scheduled GitHub Actions workflow (`.github/workflows/run.yml`) on a
-**private** repo, every 4 hours. State (`state/seen_jobs.json`) is committed
+Runs as a scheduled GitHub Actions workflow (`.github/workflows/run.yml`),
+every 4 hours. State (`state/seen_jobs.json`) is committed
 back to `main` by the workflow itself. Requires `DISCORD_WEBHOOK_URL_SUMMER`
 and `DISCORD_WEBHOOK_URL_OFF_SEASON` repo secrets.

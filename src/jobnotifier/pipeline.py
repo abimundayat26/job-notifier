@@ -62,7 +62,7 @@ def run_pipeline(config: Config, today: date | None = None) -> int:
     # if send_channeled_notifications raises unexpectedly, or a posting whose
     # notification already went out would never get recorded as seen and
     # would be re-sent as a duplicate next run. notify.send_notifications
-    # already isolates per-message failures internally (SPEC.md §10); this
+    # already isolates per-message failures internally; this
     # `finally` is defense in depth against a failure that escapes it anyway.
     summer_sent = off_season_sent = 0
     try:

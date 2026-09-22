@@ -17,10 +17,10 @@ _MAX_PAGES = 20
 class CitadelSource(Source):
     """Scrapes Citadel's public "Open Opportunities" careers page.
 
-    No ATS API exists for Citadel (SPEC.md §4) -- this page is a fully
+    No ATS API exists for Citadel -- this page is a fully
     server-rendered WordPress site with real /page/N/ pagination and no
     posted-date field anywhere, confirmed by fetching it live. Page-one-only
-    would silently miss postings (SPEC.md §11: not sorted by date), so
+    would silently miss postings (not sorted by date), so
     fetch() paginates until it finds an empty or 404 page.
     """
 

@@ -42,7 +42,7 @@ def test_missing_location_becomes_empty_string_not_error():
 
 def test_date_posted_is_always_none():
     # Greenhouse's jobs API exposes no field except updated_at, which is
-    # never used as a posting date (SPEC.md §6).
+    # never used as a posting date.
     raw = _load_fixture("greenhouse_sample.json")
     postings = _make_source().parse(raw)
     assert all(p.date_posted is None for p in postings)

@@ -41,7 +41,8 @@ def diff_and_update(
     place (returning a new dict), and return the postings a caller should
     consider notifying on (new-to-state, not seeded, or reopened).
 
-    See SPEC.md §9 for the closure-gating and reopen rules this implements.
+    Closure-gating: a source that fails to fetch can never imply closure;
+    reopened postings notify again.
     """
     new_state: dict = {k: dict(v, sources=list(v.get("sources", []))) for k, v in state.items()}
     to_consider: list[Posting] = []
