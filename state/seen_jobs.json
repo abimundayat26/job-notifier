@@ -24209,7 +24209,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171532?type=students"
   },
   "goldman sachs|quantitative strategist intern - asset and wealth management - quantitative strats|london, uk": {
@@ -24219,7 +24219,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175421?type=students"
   },
   "goldman sachs|quantitative strategist intern - asset and wealth management - quantitative strats|salt lake city, ut": {
@@ -24239,7 +24239,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175428?type=students"
   },
   "goldman sachs|quantitative strategist intern - multiple teams|london, uk": {
@@ -24271,7 +24271,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171548?type=students"
   },
   "goldman sachs|summer analyst intern - americas - awm product management|new york, ny": {
@@ -24403,7 +24403,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171550?type=students"
   },
   "goldman sachs|summer associate intern - multiple teams|new york, ny": {
@@ -28572,7 +28572,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.interstates.com/careers/jobs?gh_jid=4056077009&gh_jid=4056077009"
   },
   "interstates|software developer intern|sioux center, ia; sioux falls, sd": {
@@ -29600,6 +29600,16 @@
     ],
     "status": "open",
     "url": "https://careers.jhuapl.edu/jobs/59779?icims=1"
+  },
+  "johns hopkins applied physics laboratory|data science & autonomous systems intern - data science & autonomous systems - critical infrastructure protection|laurel, md": {
+    "first_seen": "2026-10-10",
+    "last_seen": "2026-10-10",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://careers.jhuapl.edu/jobs/60432?icims=1"
   },
   "johns hopkins applied physics laboratory|data scientist intern - data science - system performance evaluation|laurel, md": {
     "first_seen": "2026-08-28",
@@ -35068,12 +35078,12 @@
   },
   "marvell|test solutions engineering intern - bs - post-silicon hardware validation|burlington, vt": {
     "first_seen": "2026-09-09",
-    "last_seen": "2026-09-19",
+    "last_seen": "2026-10-10",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://marvell.wd1.myworkdayjobs.com/MarvellCareers/job/Burlington-VT/Test-Solutions-Engineering-Intern--BS---Summer-2027_2603835"
   },
   "mary free bed rehabilitation hospital|it intern - project management|grand rapids, mi": {
