@@ -3824,7 +3824,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://american.wd1.myworkdayjobs.com/au/job/Main-Campus-Washington-DC/Data-Quality-Assistant--Student-_R5103"
   },
   "american university|graduate event data assistant - student|washington, dc": {
@@ -15119,7 +15119,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://ats.rippling.com/collieraerospace/jobs/b666dbfe-34e5-422f-8879-4d53c0ae1f51"
   },
   "collinear ai|research scientist intern - applied scientist|bengaluru, karnataka, india; india; sf; sunnyvale, ca; united states": {
@@ -34630,6 +34630,16 @@
     "status": "open",
     "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Edinburgh/Industrial-Placement-Software-Engineer_R0033875"
   },
+  "leonardo|software engineer intern|newcastle upon tyne, uk": {
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://leonardocompany.wd3.myworkdayjobs.com/LeonardoCareerSite/job/GB---Newcastle/Summer-Placement-Software-Engineer_R0033874"
+  },
   "leonardo|software engineer placement intern|basildon, uk": {
     "first_seen": "2026-10-18",
     "last_seen": "2026-10-18",
@@ -39981,7 +39991,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://modernatx.wd1.myworkdayjobs.com/en-US/M_tx/job/Cambridge-Massachusetts/Intern--Biometrics_R19865"
   },
   "modernizing medicine|software engineer intern|boca raton, fl": {
@@ -43866,7 +43876,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Ignite-Internships--Software-Engineering_JR2026958"
   },
   "nvidia|software engineering intern|canada; santa clara, ca": {
@@ -54751,7 +54761,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://rbc.wd3.myworkdayjobs.com/RBCEARLYTALENT1/job/Minneapolis-Minnesota-United-States-of-America/Summer-2027-Wealth-Management-Technology-Internship_R-0000187852-1"
   },
   "royal bank of canada|software engineer intern - investor services - months|toronto, on, canada": {
@@ -60929,8 +60939,18 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.tesla.com/careers/search/job/283634"
+  },
+  "tesla|advanced automation engineer intern - cell engineering - winter/spring 2027|fremont, ca": {
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://www.tesla.com/careers/search/job/286986"
   },
   "tesla|ai hardware design verification engineer intern - ai hardware - tesla ai|austin, tx; palo alto, ca": {
     "first_seen": "2026-09-29",
@@ -61364,6 +61384,16 @@
     ],
     "status": "open",
     "url": "https://www.tesla.com/careers/search/job/284156"
+  },
+  "tesla|firmware intern - soc firmware engineer - si hardware infrastructure|austin, tx": {
+    "first_seen": "2026-10-18",
+    "last_seen": "2026-10-18",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://www.tesla.com/careers/search/job/287024"
   },
   "tesla|fleet management algorithms intern - vehicle software|palo alto, ca": {
     "first_seen": "2026-09-04",
@@ -66634,7 +66664,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/US---CO-Westminster/Product-Management-Intern_R57675-1"
   },
   "trimble|product management intern|westminster, co": {
@@ -66644,7 +66674,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/US---CO-Westminster/Product-Management-Intern_R57893"
   },
   "trimble|software engineer intern|atlanta, ga; dayton, oh; knoxville, tn; lake oswego, or; portsmouth, nh; princeton, nj; sunnyvale, ca; westminster, co": {
@@ -71666,7 +71696,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://careers.zimmerbiomet.com/us/en/job/12745"
   },
   "zimmer biomet holdings|summer intern - data mesh platform|remote in usa": {
