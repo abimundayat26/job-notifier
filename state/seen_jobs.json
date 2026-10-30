@@ -3809,7 +3809,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26012784"
   },
   "american express|data analytics intern - enterprise technology services|new york, ny": {
@@ -3890,7 +3890,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26011831"
   },
   "american express|data management intern - global merchant & network services|phoenix, az": {
@@ -3920,7 +3920,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26013265"
   },
   "american express|digital product analyst intern|new york, ny": {
@@ -4406,7 +4406,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://amfam.wd1.myworkdayjobs.com/AmFamGroupInternCareers/job/WI-Madison/AMAFM---Quantaum-Internship-2027_R39562"
   },
   "american family insurance group|software engineering intern|boston, ma; madison, wi": {
@@ -8341,7 +8341,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://autodesk.wd1.myworkdayjobs.com/uni/job/Toronto-ON-CAN/PhD-Researcher--AI-Research_26WD101373"
   },
   "autodesk|research intern - context and knowledge systems for ai|remote in uk": {
@@ -9598,6 +9598,46 @@
     ],
     "status": "open",
     "url": "https://bird.wd3.myworkdayjobs.com/BirdConstructionCareers/job/Calgary-AB/Business-Intelligence-Student_JR-9521"
+  },
+  "bitgo|product management intern|toronto, on, canada": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/bitgowinter2027/jobs/8784786002"
+  },
+  "bitgo|software engineer intern - custody|toronto, on, canada": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/bitgowinter2027/jobs/8783312002"
+  },
+  "bitgo|software engineer intern - prime trade|toronto, on, canada": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/bitgowinter2027/jobs/8779857002"
+  },
+  "bitgo|software engineer intern - settlement systems/go network|toronto, on, canada": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/bitgowinter2027/jobs/8779436002"
   },
   "bitmovin|technical graduate intern|denver, co": {
     "first_seen": "2026-09-18",
@@ -11311,7 +11351,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://bostonscientific.eightfold.ai/careers/job/563602813600558"
   },
   "boston scientific|software engineer intern - interns/graduates|maple grove, mn": {
@@ -13121,6 +13161,16 @@
     "status": "open",
     "url": "https://c3.ai/job-description/8860563002?gh_jid=8860563002"
   },
+  "c3.ai|ai product manager intern|redwood city, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/c3ascend/jobs/8860562002"
+  },
   "c3.ai|data scientist intern - summer 2027|redwood city, ca": {
     "first_seen": "2026-08-31",
     "last_seen": "2026-10-30",
@@ -13132,6 +13182,16 @@
     "status": "open",
     "url": "https://c3.ai/job-description/8738918002?gh_jid=8738918002"
   },
+  "c3.ai|data scientist intern|redwood city, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/c3ascend/jobs/8738917002"
+  },
   "c3.ai|software engineer intern|redwood city, ca": {
     "first_seen": "2026-08-31",
     "last_seen": "2026-10-30",
@@ -13141,7 +13201,7 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://c3.ai/job-description/8739037002?gh_jid=8739037002"
+    "url": "https://job-boards.greenhouse.io/c3ascend/jobs/8739036002"
   },
   "caci|ai prompt engineer intern|ashburn, va": {
     "first_seen": "2026-10-02",
@@ -14276,7 +14336,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://centene.wd5.myworkdayjobs.com/Centene_External/job/Remote-MO/AI-Engineer-Intern--Undergraduate---Summer-2027-_1667739"
   },
   "centene|ai software developer intern|missouri": {
@@ -17346,7 +17406,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://costar.wd1.myworkdayjobs.com/Costar_Campus/job/Irvine-US/Associate-Software-Engineer---Irvine--CA_R39736"
   },
   "costar group|associate software engineer intern|san diego, ca": {
@@ -17426,7 +17486,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://costar.wd1.myworkdayjobs.com/Costar_Campus/job/Irvine-US/Summer-2027-Technology-Intern---Irvine--CA_R39673"
   },
   "costar group|technology intern|sunnyvale, ca": {
@@ -20251,7 +20311,7 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://job-boards.greenhouse.io/drweng/jobs/7991171"
+    "url": "https://job-boards.greenhouse.io/drwfr/jobs/7991172"
   },
   "drw|fpga intern|chicago, il": {
     "first_seen": "2026-08-28",
@@ -20349,7 +20409,7 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://job-boards.greenhouse.io/drweng/jobs/7991196"
+    "url": "https://job-boards.greenhouse.io/drwfr/jobs/7991197"
   },
   "dryft|full-stack engineer intern|san francisco, ca": {
     "first_seen": "2026-08-28",
@@ -21226,7 +21286,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://emcins.wd5.myworkdayjobs.com/EMC_Internships/job/Iowa/Intern---Software-Engineering_R6557"
   },
   "emergent labs|software engineer intern|san francisco, ca": {
@@ -22991,6 +23051,26 @@
     "status": "open",
     "url": "https://jobs.exxonmobil.com/job/London-Placement-Global-Trading-Quantitative-Analyst-London-2027-LND/1439091600/?ats=successfactors"
   },
+  "f&g|business intelligence intern|des moines, ia": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://www.fglife.com/about/careers/intern/apply.html?gh_jid=7992669003"
+  },
+  "f&g|it software engineer intern - summer|des moines, ia": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://www.fglife.com/about/careers/intern/apply.html?gh_jid=7996103003"
+  },
   "f5|software developer intern|san jose, ca": {
     "first_seen": "2026-10-07",
     "last_seen": "2026-10-30",
@@ -23580,7 +23660,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://fmr.wd1.myworkdayjobs.com/targeted/job/Chicago-IL/Intern--Operations_2136370"
   },
   "fidelity investments|machine learning co-op - graph technology team|boston, ma": {
@@ -23630,7 +23710,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://fmr.wd1.myworkdayjobs.com/targeted/job/200-Seaport-Blvd-Boston-MA/Quantitative-Development---Data-Science-Internship_2134404"
   },
   "fidelity investments|quantitative research analyst intern - equity quantitative research team|boston, ma": {
@@ -25605,7 +25685,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Niskayuna/Engineering-Intern---Power-Conversion---Storage-AI-Tool-Developer--2027_R5049957-1"
   },
   "ge vernova|grid foundational models intern - agi|bellevue, wa": {
@@ -25730,6 +25810,16 @@
     "status": "closed",
     "url": "https://gevernova.wd5.myworkdayjobs.com/vernova_externalsite/job/Rochester/GE-Vernova-Software-Engineering---Co-op---Spring-Summer-2027_R5051780-2"
   },
+  "ge vernova|software engineer intern|cambridge, uk": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://gevernova.wd5.myworkdayjobs.com/only_confidential_executive_recruiting/job/Software-Engineering-Intern_R5057006-1"
+  },
   "ge vernova|software engineering co-op - critical infrastructure communication engineering|rochester, ny": {
     "first_seen": "2026-09-04",
     "last_seen": "2026-09-30",
@@ -25749,6 +25839,16 @@
     ],
     "status": "open",
     "url": "https://gevernova.wd5.myworkdayjobs.com/vernova_externalsite/job/Greenville/GE-Vernova-Systems-Architecture-Intern---2027_R5054433-2"
+  },
+  "gearset|software engineer intern|cambridge, uk": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.ashbyhq.com/gearset/637b4805-e079-4bbd-91e8-96af81dd288f/application?embed=true"
   },
   "gecko robotics|ai/machine learning engineer intern|new york, ny": {
     "first_seen": "2026-09-16",
@@ -25827,7 +25927,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://roche.wd3.myworkdayjobs.com/ROG-A2O-GENE/job/South-San-Francisco/XMLNAME-2027-Spring-Intern---Data-Science---Machine-Learning_202609-124657"
   },
   "genentech|prescient frontier research intern|south san francisco, ca": {
@@ -27168,6 +27268,16 @@
     "status": "open",
     "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Intern---Research---Drug-Metabolism---AI_R0055519"
   },
+  "gilead sciences|research intern - strategy, innovation & portfolio - ai|foster city, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://gilead.wd1.myworkdayjobs.com/gileadcareers/job/United-States---California---Foster-City/Intern---Research---Strategy--Innovation---Portfolio_R0054502"
+  },
   "gitai|software engineer intern|los angeles, ca": {
     "first_seen": "2026-09-29",
     "last_seen": "2026-10-30",
@@ -27276,7 +27386,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/USA---California---Santa-Clara/Digital-Design-Backend-Engineering-Intern--3D-and-AI-Flows_JR-2604355"
   },
   "globalfoundries|failure analysis engineering intern|malta, ny": {
@@ -27521,7 +27631,7 @@
   },
   "goldman sachs|associate intern - the core quantitative strats|dallas, tx": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27542,7 +27652,7 @@
   },
   "goldman sachs|quantitative strategist associate intern - asset and wealth management|london, uk": {
     "first_seen": "2026-08-28",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27553,7 +27663,7 @@
   },
   "goldman sachs|quantitative strategist associate intern - the core quantitative strats|london, uk": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27564,7 +27674,7 @@
   },
   "goldman sachs|quantitative strategist associate intern - the core quantitative strats|new york, ny": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27575,77 +27685,77 @@
   },
   "goldman sachs|quantitative strategist intern - americas - the core quantitative strats|dallas, tx": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171534?type=students"
   },
   "goldman sachs|quantitative strategist intern - americas - the core quantitative strats|new york, ny": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171533?type=students"
   },
   "goldman sachs|quantitative strategist intern - americas - the core quantitative strats|salt lake city, ut": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171551?type=students"
   },
   "goldman sachs|quantitative strategist intern - americas|dallas, tx": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171532?type=students"
   },
   "goldman sachs|quantitative strategist intern - asset and wealth management - quantitative strats|london, uk": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175421?type=students"
   },
   "goldman sachs|quantitative strategist intern - asset and wealth management - quantitative strats|salt lake city, ut": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171549?type=students"
   },
   "goldman sachs|quantitative strategist intern - investment banking|london, uk": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175428?type=students"
   },
   "goldman sachs|quantitative strategist intern - multiple teams|london, uk": {
     "first_seen": "2026-08-28",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27656,7 +27766,7 @@
   },
   "goldman sachs|quantitative strategist intern - multiple teams|new york, ny": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27667,52 +27777,52 @@
   },
   "goldman sachs|quantitative strats analyst intern - americas - investment banking|dallas, tx": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171548?type=students"
   },
   "goldman sachs|summer analyst intern - americas - engineering|salt lake city, ut": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171565?type=students"
   },
   "goldman sachs|summer analyst intern - americas - investment banking quantitative strats|new york, ny": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171547?type=students"
   },
   "goldman sachs|summer analyst intern - engineering|dallas, tx": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171553?type=students"
   },
   "goldman sachs|summer analyst intern - engineering|london, uk": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/170644?type=students"
   },
   "goldman sachs|summer analyst intern - engineering|seattle, wa": {
@@ -27727,7 +27837,7 @@
   },
   "goldman sachs|summer analyst intern - ficc and equities - sales and trading|west palm beach, fl": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27738,27 +27848,27 @@
   },
   "goldman sachs|summer analyst intern - the core quantitative strats|london, uk": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175426?type=students"
   },
   "goldman sachs|summer analyst intern|new york, ny": {
     "first_seen": "2026-09-04",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171550?type=students"
   },
   "goldman sachs|summer associate intern - multiple teams|new york, ny": {
     "first_seen": "2026-08-31",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -27769,7 +27879,7 @@
   },
   "goldman sachs|summer associate intern|new york, ny": {
     "first_seen": "2026-08-28",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -31684,12 +31794,12 @@
   },
   "infinitequant|quantitative developer intern|dubai - united arab emirates; nyc": {
     "first_seen": "2026-10-16",
-    "last_seen": "2026-10-16",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.smartrecruiters.com/InfiniteQuant/744000147163879"
   },
   "infinitequant|quantitative researcher intern - summer 2027|dubai - united arab emirates; nyc": {
@@ -33923,6 +34033,16 @@
     "status": "closed",
     "url": "https://careers.jhuapl.edu/jobs/59996?icims=1"
   },
+  "johns hopkins applied physics laboratory|robotics engineer intern - maritime systems|laurel, md": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://careers.jhuapl.edu/jobs/60742?icims=1"
+  },
   "johns hopkins applied physics laboratory|sensor systems intern - data analytics|laurel, md": {
     "first_seen": "2026-09-04",
     "last_seen": "2026-10-04",
@@ -34172,7 +34292,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Danvers-Massachusetts-United-States-of-America/Product-Management-Co-Op_R-096757"
   },
   "johnson & johnson|production data analyst co-op - manufacturing|danvers, ma": {
@@ -34182,7 +34302,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jj.wd5.myworkdayjobs.com/JJ/job/Danvers-Massachusetts-United-States-of-America/Production-Data-Analyst-Co-Op_R-098904"
   },
   "johnson & johnson|project delivery digital engineering & property services co-op|new brunswick, nj": {
@@ -38146,6 +38266,16 @@
     "status": "open",
     "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4465059009"
   },
+  "lila sciences|bayesian methods co-op|cambridge, ma; sf": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/lilasciences/jobs/4469148009"
+  },
   "lila sciences|data extraction co-op|cambridge, ma": {
     "first_seen": "2026-08-28",
     "last_seen": "2026-09-30",
@@ -38294,7 +38424,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://myview.wd3.myworkdayjobs.com/paradox_careers/job/1-Presidents-Choice-Circle-Brampton-ON/Supply-Chain-Business-Intelligence---Co-op-Student_R2000697069"
   },
   "loblaw companies|technology transformation co-op - technology transformation|brampton, on, canada": {
@@ -38508,7 +38638,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://lseg.wd3.myworkdayjobs.com/Graduate_Careers/job/Boston-Massachusetts/Engineering-Summer-Internship-Programme_R0123570-1"
   },
   "lseg|engineering intern - multiple teams|london, uk": {
@@ -38518,7 +38648,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://lseg.wd3.myworkdayjobs.com/Graduate_Careers/job/London-United-Kingdom/Engineering-Summer-Internship-Programme_R0123389"
   },
   "lseg|engineering intern|charlotte, nc": {
@@ -38538,7 +38668,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://lseg.wd3.myworkdayjobs.com/en-US/Careers/job/New-York-City-United-States/Engineering-Summer-Internship-Programme_R0123569-1"
   },
   "lseg|engineering intern|nottingham, uk": {
@@ -38769,7 +38899,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4361617"
   },
   "lyft|applied scientist intern|san francisco, ca": {
@@ -41212,7 +41342,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://msd.wd5.myworkdayjobs.com/searchjobs/job/USA---Pennsylvania---West-Point/XMLNAME-2027-Future-Talent-Program---Computer-Scientist---Agentic---Augmented-Authoring-Systems---Co-op_R412857"
   },
   "merck|data analytics and insights intern|rahway, nj": {
@@ -42663,7 +42793,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://mfs.wd1.myworkdayjobs.com/en-US/MFS-Careers/job/Boston/Enterprise-Data-Management-Co-op_MFS-231948"
   },
   "mfs|enterprise data management intern|boston, ma": {
@@ -43098,7 +43228,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://micron.wd1.myworkdayjobs.com/External/job/Boise-ID---SIG-Building/Embedded-Software-Engineering-Intern_JR115959"
   },
   "micron technology|firmware engineer intern|longmont, co": {
@@ -44889,7 +45019,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://job-boards.greenhouse.io/nanopathinc/jobs/4732881005"
   },
   "nasa jet propulsion laboratory|academic part time intern|pasadena, ca": {
@@ -45729,6 +45859,16 @@
     "status": "closed",
     "url": "https://nbtbancorp.wd12.myworkdayjobs.com/NBT-B/job/Williamsville-NY/Internship---Data-Warehouse---Analytics-Consultant_JR4868"
   },
+  "ncino|software engineer intern|lehi, ut": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/ncinoearlytalent/jobs/4403506009"
+  },
   "ncr atleos|data science intern|atlanta, ga; frisco, tx": {
     "first_seen": "2026-09-14",
     "last_seen": "2026-10-30",
@@ -46039,6 +46179,16 @@
     "status": "closed",
     "url": "https://newbalance.wd1.myworkdayjobs.com/careers/job/Boston-MA-Headquarters---NB/Kids-Footwear-Product-Coop_R41587"
   },
+  "new york iso|energy market research and engineering intern|rensselaer, ny": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/nyisointernships/jobs/5236688007"
+  },
   "new york iso|icap market operations co-op|rensselaer, ny": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-10-30",
@@ -46048,6 +46198,36 @@
     ],
     "status": "open",
     "url": "https://job-boards.greenhouse.io/nyisocoops/jobs/5236014007"
+  },
+  "new york iso|information technology software development intern|rensselaer, ny": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/nyisointernships/jobs/5236084007"
+  },
+  "new york iso|market design intern|rensselaer, ny": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/nyisointernships/jobs/5236095007"
+  },
+  "new york iso|market mitigation & analysis intern|rensselaer, ny": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/nyisointernships/jobs/5236684007"
   },
   "new york iso|software engineering co-op - software engineering|rensselaer, ny": {
     "first_seen": "2026-10-29",
@@ -47279,7 +47459,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://ngc.wd1.myworkdayjobs.com/Northrop_Grumman_External_Site/job/United-States-California-Azusa/XMLNAME-2027-Software-Engineer-Intern---Azusa-CA_R10257903"
   },
   "northrop grumman|software engineer intern|beavercreek, oh": {
@@ -53675,7 +53855,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://boards.greenhouse.io/pathrobotics/jobs/8924241002"
   },
   "pathai|machine learning intern/co-op|boston, ma; nyc; remote in usa": {
@@ -55437,7 +55617,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://pg.wd5.myworkdayjobs.com/1000/job/BROOKLANDS-GO/Consumer-Analytics---Insights-Summer-Internship-2027_R000160023"
   },
   "procter & gamble|data & ai engineering intern|cincinnati, oh": {
@@ -55735,6 +55915,16 @@
     ],
     "status": "open",
     "url": "https://ptc.wd1.myworkdayjobs.com/ptc/job/Boston-MA-USA/Software-Engineer-Intern--Summer-2027-_JR112943"
+  },
+  "ptc|software engineering intern|cambridge, uk": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://ptc.wd1.myworkdayjobs.com/ptc/job/Cambridge-United-Kingdom/Software-Engineering-Summer-Internship-2027---Cambridge_JR112998"
   },
   "publicis groupe|engineering intern|chicago, il": {
     "first_seen": "2026-09-09",
@@ -59731,7 +59921,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/CA-QC-LONGUEUIL-J01--1000-Blvd-Marie-Victorin--J01-BLDG/Stage---Hiver-2027---Support-aux-Programmes-des-GAP---Internship---Winter-2027---APU-Programs-Support_01869035"
   },
   "rtx|ags software engineering co-op|cedar rapids, ia": {
@@ -60005,7 +60195,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Electrical-Engineer-Intern_01874283"
   },
   "rtx|electrical engineer intern|windsor locks, ct": {
@@ -60235,7 +60425,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-MA-MARLBOROUGH-MA2--1001-Boston-Post-Rd--BLDG-2/Receiver--Exciter----Processing-Architecture-Software-Engineer-Intern--Summer-2027----Onsite_01885187"
   },
   "rtx|repair & overhaul customer solutions group intern|saint-hubert, longueuil, qc, canada": {
@@ -60378,6 +60568,16 @@
     ],
     "status": "open",
     "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-TX-RICHARDSON-C17--1717-Cityline-Dr--CITYLINE-C17/Software-Engineer-Co-op--Remote-_01883545"
+  },
+  "rtx|software engineer intern - summer 2027|cedar rapids, ia": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://globalhr.wd5.myworkdayjobs.com/fr-CA/Private_Posting_No_TMP/job/US-IA-CEDAR-RAPIDS-105--400-Collins-Rd-NE--BLDG-105/Software-Engineering-Intern--Summer-2027-_01867129"
   },
   "rtx|software engineer intern - summer 2027|fort wayne, in": {
     "first_seen": "2026-09-30",
@@ -60609,7 +60809,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://globalhr.wd5.myworkdayjobs.com/rec_rtx_ext_gateway/job/US-AZ-TUCSON-805--1151-E-Hermans-Rd--BLDG-805/Software-Engineer-Intern_01874282"
   },
   "rtx|software engineer intern|woburn, ma": {
@@ -61070,7 +61270,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://ejia.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/107368"
   },
   "s&p global|machine learning engineer intern|cambridge, ma; nyc": {
@@ -61182,6 +61382,16 @@
     ],
     "status": "open",
     "url": "https://www.sagesure.com/careers/current-job-openings/?gh_jid=4719539006"
+  },
+  "sagesure|data science product analyst intern|fairfield, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://www.sagesure.com/careers/current-job-openings/?gh_jid=4719503006"
   },
   "sagesure|data scientist intern|cheshire, ct; jersey city, nj": {
     "first_seen": "2026-10-10",
@@ -62149,7 +62359,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.lever.co/sep/4efbdbce-a753-41b5-8ed7-0661cd193178/apply"
   },
   "sequence holdings|software engineer intern|new york, ny": {
@@ -62264,7 +62474,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4718702006"
   },
   "sharkninja|product strategy & development co-op|needham, ma": {
@@ -63062,6 +63272,36 @@
     "status": "open",
     "url": "https://job-boards.greenhouse.io/sitimecorporation/jobs/4452953009"
   },
+  "sk hynix|asic design intern|san jose, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4460200009"
+  },
+  "sk hynix|research intern - loop engineering|san jose, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4435645009"
+  },
+  "sk hynix|ssd firmware development engineer intern|san jose, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/skhynixmemorysolutionsamericainc/jobs/4387708009"
+  },
   "skyband systems|avionics hardware & test engineer intern|kirkland, wa": {
     "first_seen": "2026-10-28",
     "last_seen": "2026-10-30",
@@ -63566,7 +63806,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://sonyglobal.wd1.myworkdayjobs.com/Sony_Europe_Careers/job/Weybridge/Data-Quality---Systems-Intern---Student-Placement-Year_JR-119746"
   },
   "sony|research engineer intern - ethical creative and protective ai lab|connecticut; florida; massachusetts; michigan; nyc; new jersey; virginia": {
@@ -64396,7 +64636,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.statefarm.com/jobs/46353?icims=1"
   },
   "state farm|financial operations data analytics intern|bloomington, il; dunwoody, ga; richardson, tx; tempe, az": {
@@ -64542,6 +64782,16 @@
     ],
     "status": "open",
     "url": "https://jobs.ashbyhq.com/stradahq/d277be89-9d67-48cd-9e67-3b17bbab709e/application?embed=true"
+  },
+  "stratolaunch|manufacturing systems & data intern - systems|mojave, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/stratolaunch/jobs/5467824008"
   },
   "stripe|data analyst intern|nyc; seattle, wa; south sf": {
     "first_seen": "2026-10-02",
@@ -65477,7 +65727,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://synopsys.avature.net/careers/JobDetail/19182"
   },
   "synopsys|technical-engineering intern|mississauga, on, canada": {
@@ -66454,7 +66704,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.tesla.com/careers/search/job/282301"
   },
   "tesla|automated diagnostics intern - software engineer|palo alto, ca": {
@@ -67479,7 +67729,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.tesla.com/careers/search/job/283395"
   },
   "tesla|software integration engineer intern - optimus|palo alto, ca": {
@@ -69100,7 +69350,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://thermofisher.wd5.myworkdayjobs.com/ThermoFisherCareers/job/Ho-Chi-Minh-City-Vietnam/Sr-Operations-Data-Analytics-Intern_R-01366619"
   },
   "thermo fisher scientific|senior research & development/digital co-op|hillsboro, or": {
@@ -74710,13 +74960,13 @@
   },
   "vestmark|software engineer co-op|boston, ma": {
     "first_seen": "2026-10-13",
-    "last_seen": "2026-10-20",
+    "last_seen": "2026-10-30",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
-    "url": "https://job-boards.greenhouse.io/vestmark/jobs/8204509"
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/internrecruiting/jobs/8204511"
   },
   "vetsez|full stack developer intern|remote in us": {
     "first_seen": "2026-08-28",
@@ -75168,6 +75418,16 @@
     ],
     "status": "closed",
     "url": "https://job-boards.greenhouse.io/voloridgeinvestmentmanagement/jobs/4405530009"
+  },
+  "voyager technologies|software engineer intern|long beach, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/voyagertechnologiesinc/jobs/4423330009"
   },
   "vsp vision|software engineer intern - technology innovation|remote in usa": {
     "first_seen": "2026-10-28",
@@ -75814,6 +76074,16 @@
     ],
     "status": "open",
     "url": "https://careers.withwaymo.com/jobs?gh_jid=8205680"
+  },
+  "waymo|ms/phd intern - weather perception|san francisco, ca": {
+    "first_seen": "2026-10-30",
+    "last_seen": "2026-10-30",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://careers.withwaymo.com/jobs?gh_jid=8335511"
   },
   "waymo|ms/phd, ml systems & behavior discovery intern|mountain view, ca": {
     "first_seen": "2026-10-06",
