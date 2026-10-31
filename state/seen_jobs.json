@@ -27832,7 +27832,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171551?type=students"
   },
   "goldman sachs|quantitative strategist intern - americas|dallas, tx": {
@@ -27852,7 +27852,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175421?type=students"
   },
   "goldman sachs|quantitative strategist intern - asset and wealth management - quantitative strats|salt lake city, ut": {
@@ -27904,7 +27904,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171548?type=students"
   },
   "goldman sachs|summer analyst intern - americas - engineering|salt lake city, ut": {
@@ -31925,7 +31925,7 @@
   },
   "infinitequant|quantitative developer internship - summer 2027|dubai - united arab emirates; nyc": {
     "first_seen": "2026-09-01",
-    "last_seen": "2026-10-30",
+    "last_seen": "2026-10-31",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2026-Internships",
@@ -31941,7 +31941,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.smartrecruiters.com/InfiniteQuant/744000147163879"
   },
   "infinitequant|quantitative researcher intern - summer 2027|dubai - united arab emirates; nyc": {
@@ -51177,6 +51177,26 @@
     ],
     "status": "open",
     "url": "https://jobs.lever.co/palantir/3d06b4bc-6a7b-4f73-b5c5-4544354e3d0f"
+  },
+  "palantir|finance operator intern|new york, ny": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "source": "tier2:lever:palantir",
+    "sources": [
+      "tier2:lever:palantir"
+    ],
+    "status": "open",
+    "url": "https://jobs.lever.co/palantir/bd7766c4-6aea-4b37-8d47-a8864bb9bd69"
+  },
+  "palantir|finance operator|new york, ny": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-10-31",
+    "source": "tier2:lever:palantir",
+    "sources": [
+      "tier2:lever:palantir"
+    ],
+    "status": "open",
+    "url": "https://jobs.lever.co/palantir/4c13fdb2-308e-4185-bb6b-105d7bf38d92"
   },
   "palantir|forward deployed ai engineer|london, united kingdom": {
     "first_seen": "2026-08-31",
