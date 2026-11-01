@@ -27471,7 +27471,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://higher.gs.com/roles/174815?type=students"
   },
   "goldman sachs|quantitative strategist associate intern - asset and wealth management|london, uk": {
@@ -27534,7 +27534,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171551?type=students"
   },
   "goldman sachs|quantitative strategist intern - americas|dallas, tx": {
@@ -27554,7 +27554,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/175421?type=students"
   },
   "goldman sachs|quantitative strategist intern - asset and wealth management - quantitative strats|salt lake city, ut": {
@@ -27606,7 +27606,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/171548?type=students"
   },
   "goldman sachs|summer analyst intern - americas - engineering|salt lake city, ut": {
@@ -27646,7 +27646,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://higher.gs.com/roles/170644?type=students"
   },
   "goldman sachs|summer analyst intern - engineering|seattle, wa": {
@@ -72664,6 +72664,16 @@
     ],
     "status": "open",
     "url": "https://careers.trccompanies.com/jobs/26840?icims=1"
+  },
+  "trg|full stack application developer intern|dallas, tx": {
+    "first_seen": "2026-11-01",
+    "last_seen": "2026-11-01",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://secure7.saashr.com/ta/6203759.careers?ShowJob=638057422&lang=en-US"
   },
   "tribalscale|agile software engineer co-op|toronto, on, canada": {
     "first_seen": "2026-08-28",
