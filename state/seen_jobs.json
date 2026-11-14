@@ -536,6 +536,36 @@
     "status": "closed",
     "url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers/job/Ontario---Toronto/Industry-X----MES---Supply-Chain-Engineering-Co-op-Analyst---Toronto---NAELFY27_R00365351"
   },
+  "accenture|technology apprentice|london, uk": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://accenture.pinpointhq.com/en/postings/0f0d4251-2c54-4614-8be7-f0042813b9d3?ats=pinpointhq"
+  },
+  "accenture|technology degree apprentice|glasgow, uk": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://accenture.pinpointhq.com/en/postings/fc130ed0-852f-4efa-afc5-780a10e88fb1?ats=pinpointhq"
+  },
+  "accenture|technology software engineer apprentice|newcastle upon tyne, uk": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://accenture.pinpointhq.com/en/postings/97c7121d-21cf-4cfc-aed2-5f4b54e81368?ats=pinpointhq"
+  },
   "accenture|technology summer analyst - multiple teams|arlington county, arlington, va; atlanta, ga; austin, tx; boston, ma; charlotte, nc; chicago, il; dallas, tx; detroit, mi; la; morristown, nj; nyc; philadelphia, pa; sf; san diego, ca; seattle, wa; st. louis, mo": {
     "first_seen": "2026-09-11",
     "last_seen": "2026-11-14",
@@ -8094,7 +8124,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ashbyhq.com/aurora-operations-inc/06daa269-c02b-43a4-88b8-b57a3ba335ef/application?embed=true"
   },
   "austin community college district|gis intern 1 - nsgic/txgio project|texas": {
@@ -13991,6 +14021,16 @@
     "status": "open",
     "url": "https://hdow.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/job/250537"
   },
+  "capgemini|digital and technology solutions degree apprentice - engineering|telford, uk": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://careers.capgemini.com/job/Telford-Engineering-Digital-and-Technology-Solutions-Degree-Apprenticeship-2027/1447967833/?ats=successfactors"
+  },
   "capital de recherche tower|machine learning intern|montreal, qc, canada": {
     "first_seen": "2026-10-29",
     "last_seen": "2026-11-14",
@@ -14362,6 +14402,56 @@
     ],
     "status": "open",
     "url": "https://jobs.smartrecruiters.com/Carlisle/3743990016055226"
+  },
+  "carnegie mellon university|advanced computing lab intern|pittsburgh, pa": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://cmu.wd115.myworkdayjobs.com/SEI/job/Pittsburgh-PA/Advanced-Computing-Lab-Intern---Summer-2027-_2025336-1"
+  },
+  "carnegie mellon university|agentic development intern|pittsburgh, pa": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://cmu.wd115.myworkdayjobs.com/SEI/job/Pittsburgh-PA/Agentic-Development-Intern_2025292-1"
+  },
+  "carnegie mellon university|cyber ai engineer intern|pittsburgh, pa": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://cmu.wd115.myworkdayjobs.com/SEI/job/Pittsburgh-PA/Cyber-AI-Engineering-Intern--Spring-2027-_2025346-2"
+  },
+  "carnegie mellon university|enabling mission capability at scale intern|pittsburgh, pa": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://cmu.wd115.myworkdayjobs.com/SEI/job/Pittsburgh-PA/Enabling-Mission-Capability-at-Scale-Intern---Summer-2027_2025300-1"
+  },
+  "carnegie mellon university|full-stack software development intern|pittsburgh, pa": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://cmu.wd115.myworkdayjobs.com/SEI/job/Pittsburgh-PA/Full-Stack-Software-Development-Intern_2025287-2"
   },
   "carrier global|engineering apprentice|belfast, uk; bristol, uk; glasgow, uk; livingston, uk; london, uk; manchester, uk; sheffield, uk; stoke-on-trent, uk; tottenham, london, uk": {
     "first_seen": "2026-09-03",
@@ -14801,7 +14891,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://internaljobs.centurylink.com/job/Remote-AI-&-Automation-Builders-Summer-2027-Internship-Pathway/1440953200/?ats=successfactors"
   },
   "centurylink|ai product & business innovation intern|remote in usa": {
@@ -14811,7 +14901,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://internaljobs.centurylink.com/job/Remote-AI-Product-&-Business-Innovation-Summer-2027-Internship-Pathway/1440948000/?ats=successfactors"
   },
   "centurylink|data internship - analytics & decision science|remote in usa": {
@@ -14821,7 +14911,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://internaljobs.centurylink.com/job/Remote-Data,-Analytics-&-Decision-Science-Summer-2027-Internship-Pathway/1440961600/?ats=successfactors"
   },
   "cerity partners|investment data & technology intern - central solutions|new york, ny": {
@@ -21208,7 +21298,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://apply.edisoncareers.com/job/Santa-Ana-2027-Summer-Internship-Computer-Science-(Santa-Ana)-CA-92705/1425158700/?ats=successfactors"
   },
   "edison international|data analytics intern - data science - applied math|pomona, ca; rosemead, ca": {
@@ -22901,7 +22991,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.erieinsurance.com/job/Erie-Intern-II-(Claims-Systems-&-AI)-PA-16506/1447480500/?ats=successfactors"
   },
   "erie insurance group|data intern 2|erie, pa": {
@@ -23468,7 +23558,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.exxonmobil.com/job/London-Placement-Global-Trading-Quantitative-Analyst-London-2027-LND/1439091600/?ats=successfactors"
   },
   "f&g|business intelligence intern|des moines, ia": {
@@ -31937,7 +32027,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.huntingtoningalls.com/job/Pascagoula-2027-COLLEGE-SUMMER-INTERN-COMPUTER-ENGINEERING-Miss/1430053700/?ats=successfactors"
   },
   "hy-vee|data analytics intern|west des moines, ia": {
@@ -32524,7 +32614,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://impulsespace.pinpointhq.com/en/postings/2b03cd5d-4a58-48a0-81f4-ea8c8c7bcd2a?ats=pinpointhq"
   },
   "inbulks|junior front end developer intern|long island city, queens, ny": {
@@ -33898,7 +33988,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://investquebec.wd10.myworkdayjobs.com/ext/job/Montral/tudiant---Automatisation-et-intelligence-artificielle--Montral-_R3656"
   },
   "irhythm technologies|electrical engineer co-op intern|san francisco, ca": {
@@ -38908,7 +38998,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://relx.wd3.myworkdayjobs.com/en-US/RiskSolutions/job/Alpharetta-GA-Alderman/Product-Management-Intern--Insurance_R118879"
   },
   "lexisnexis risk solutions|product manager intern - government|alpharetta, ga": {
@@ -38918,7 +39008,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://relx.wd3.myworkdayjobs.com/en-US/RiskSolutions/job/Alpharetta-GA-Alderman/Product-Management-Intern--Government_R118611"
   },
   "liberty mutual|analyst development intern|boston, ma; plano, tx; seattle, wa": {
@@ -40273,12 +40363,12 @@
   },
   "mann+hummel|product management & market intelligence intern|gastonia, nc": {
     "first_seen": "2026-10-31",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://careers.mann-hummel.com/job/Gastonia-Product-Management-&-Market-Intelligence-Intern-NC-28054/1453138533/?ats=successfactors"
   },
   "mantari|electrical engineering intern|torrance, ca": {
@@ -42128,7 +42218,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.merrick.com/jobs/8476?icims=1&lang=en-us"
   },
   "meshy|data infra engineer intern|san francisco, ca": {
@@ -47862,7 +47952,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/41022"
   },
   "nomad gcs|software engineer intern|columbia falls, mt": {
@@ -49855,7 +49945,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://osc.wd3.myworkdayjobs.com/OSCCareers/job/CA-ON-Toronto/Economic--Market---Analysis-Co-op-Student_JR100976"
   },
   "openart ai|early adopter & product builder intern - creative ai|san carlos, ca": {
@@ -50400,42 +50490,42 @@
   },
   "paccar|customer experience analytics intern|renton, wa": {
     "first_seen": "2026-10-07",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Renton-Summer-Internship-Customer-Experience-Analytics-WA-98055/1444982233/?ats=successfactors"
   },
   "paccar|data analyst intern|chillicothe, oh": {
     "first_seen": "2026-11-09",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Chillicothe-Data-Analyst-Intern-OH-45601-8829/1455610233/?ats=successfactors"
   },
   "paccar|data engineer intern|chillicothe, oh": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Chillicothe-Data-Engineering-Intern-OH-45601-8829/1456138333/?ats=successfactors"
   },
   "paccar|data engineer intern|denton, tx": {
     "first_seen": "2026-11-04",
-    "last_seen": "2026-11-07",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Denton-2027-Summer-Internship-Data-Engineer-TX-76205-7864/1454360033/?ats=successfactors"
   },
   "paccar|dealer development marketing data analytics intern|kirkland, wa": {
@@ -50450,12 +50540,12 @@
   },
   "paccar|engineering operations intern|kirkland, wa": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Kirkland-Summer-2027-Engineering-Operations-Intern-WA-98033/1449526733/?ats=successfactors"
   },
   "paccar|field service data analyst intern|kirkland, wa": {
@@ -50470,12 +50560,12 @@
   },
   "paccar|fleet pricing intern - fleet pricing|renton, wa": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Renton-Summer-Internship-Fleet-Pricing-WA-98055/1450037933/?ats=successfactors"
   },
   "paccar|greenhouse gas data analyst intern|kirkland, wa": {
@@ -50490,12 +50580,12 @@
   },
   "paccar|materials systems intern|denton, tx": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Denton-2027-Summer-Internship-Materials-Systems-TX-76205-7864/1453566333/?ats=successfactors"
   },
   "paccar|product planning intern|denton, tx": {
@@ -50520,22 +50610,22 @@
   },
   "paccar|sales administration data analyst intern - greenhouse gas|denton, tx": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Denton-2027-Summer-Internship-Sales-Administration-Data-Analyst-Greenhouse-Gas-TX-76205-7864/1453564433/?ats=successfactors"
   },
   "paccar|software developer intern|denton, tx": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-04",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Denton-2027-Summer-Internship-Software-Developer-TX-76205-7864/1453615433/?ats=successfactors"
   },
   "paccar|summer intern - customer experience analytics - vehicle support center|renton, wa": {
@@ -50550,32 +50640,32 @@
   },
   "paccar|summer intern - product definition analytics|renton, wa": {
     "first_seen": "2026-10-15",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Renton-Summer-Internship-Product-Definition-Analytics-WA-98055/1448230233/?ats=successfactors"
   },
   "paccar|technical content author intern - technical content analytics|renton, wa": {
     "first_seen": "2026-10-21",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Renton-Summer-Internship-Technical-Content-Analytics-WA-98055/1449634733/?ats=successfactors"
   },
   "paccar|warranty business intern|denton, tx": {
     "first_seen": "2026-11-03",
-    "last_seen": "2026-11-13",
+    "last_seen": "2026-11-14",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.paccar.com/job/Denton-2027-Summer-Internship-Warranty-Business-TX-76205-7864/1453566133/?ats=successfactors"
   },
   "paccar|warranty data analyst intern|kirkland, wa": {
@@ -56257,6 +56347,16 @@
     "status": "open",
     "url": "https://apply.workable.com/pony-dot-ai/j/4C1F53EF5D/apply"
   },
+  "postman|ai engineer intern|san francisco, ca": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://postman.wd108.myworkdayjobs.com/careers/job/San-Francisco-CA-US/AI-Engineer--Intern_JR1000055"
+  },
   "powertown|forward deployed engineer intern|boston, ma": {
     "first_seen": "2026-10-28",
     "last_seen": "2026-11-14",
@@ -57467,7 +57567,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.qorvo.com/job/Greensboro-SOI-Design-Intern-NC-27409/1421670100/?ats=successfactors"
   },
   "qorvo|test characterization engineer intern - rf characterization engineering|richardson, tx": {
@@ -59597,7 +59697,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.riotgames.com/en/work-with-us/job/8356525?gh_jid=8356525"
   },
   "rippling|data science intern - summer 2027|san francisco, ca": {
@@ -60993,7 +61093,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.royalcaribbeangroup.com/job/Miramar-Intern,-Guest-Travel-Services-(Summer-2027)-FL-33132/1440504600/?ats=successfactors"
   },
   "rr donnelley|it software integration & automation intern|minneapolis, mn": {
@@ -62318,7 +62418,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.safran-dsi.com/job/Bedford-Optical-Engineering-Internship-NH-03110/1431030500/?ats=successfactors"
   },
   "safran|software engineering intern|bedford, nh": {
@@ -62328,7 +62428,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.safran-dsi.com/job/Bedford-Software-Engineering-Internship-NH-03110/1440599100/?ats=successfactors"
   },
   "sagesure|data operations engineer intern|cheshire, ct; jersey city, nj": {
@@ -63882,7 +63982,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ashbyhq.com/shield/16b044e7-02e2-4657-9b87-782a76b127b1/application?embed=true"
   },
   "shield ai|embedded firmware intern|dallas, tx": {
@@ -63894,6 +63994,16 @@
     ],
     "status": "closed",
     "url": "https://jobs.ashbyhq.com/f7d8749a-72d6-407c-bf98-292ea630c73a/621d736b-5ae1-4d62-8f05-088753318d29/application?embed=true"
+  },
+  "shield ai|engineer 1 new grad - software|arlington county, arlington, va": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.ashbyhq.com/shield/7e0ae8a3-4872-431c-a04a-2f2b8988b527/application?embed=true"
   },
   "shield ai|engineer 2 new grad - multiple teams|washington, dc": {
     "first_seen": "2026-11-09",
@@ -67269,7 +67379,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://spa.jibeapply.com/jobs/23634?icims=1"
   },
   "systems planning and analysis|data scientist fellow|alexandria, va": {
@@ -67689,7 +67799,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://td.wd3.myworkdayjobs.com/TD_Bank_Careers/job/New-York-New-York/XMLNAME-2027-Summer-Internship-Graduate-Leadership-Program--Consumer-Deposit-and-Payment-Products_R_1508783"
   },
   "td bank|life & health product management co-op intern|toronto, on, canada": {
@@ -68437,6 +68547,16 @@
     ],
     "status": "open",
     "url": "https://www.tesla.com/careers/search/job/281457"
+  },
+  "tesla|electrical engineer intern - high speed hardware design|palo alto, ca": {
+    "first_seen": "2026-11-14",
+    "last_seen": "2026-11-14",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://www.tesla.com/careers/search/job/289951"
   },
   "tesla|electronic design engineer intern - electronic systems|palo alto, ca": {
     "first_seen": "2026-08-28",
@@ -71211,7 +71331,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://lifeattiktok.com/search/7629248119245261061"
   },
   "tiktok|applied scientist intern - multiple teams|san jose, ca": {
@@ -77984,7 +78104,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.withwaymo.com/jobs?gh_jid=8335511"
   },
   "waymo|ms/phd, ml systems & behavior discovery intern|mountain view, ca": {
@@ -79150,7 +79270,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://career-portal-wolfandco.icims.com/jobs/1599/job?mobile=true&needsRedirect=false"
   },
   "wolters kluwer|front-end developer intern - se|sherbrooke, qc, canada": {
@@ -79320,7 +79440,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://emit.fa.ca3.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2001/job/98500"
   },
   "wtw|data analyst intern|new york, ny": {
