@@ -1689,6 +1689,16 @@
     "status": "open",
     "url": "https://allegion.wd5.myworkdayjobs.com/EarlyTalent_Careers/job/Indianapolis-IN---Hague-Rd/Summer-Intern---Hardware-Engineering---Indianapolis--Indiana_JR37467"
   },
+  "allegion|product data intern - product data|colorado springs, co; indianapolis, in": {
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://allegion.wd5.myworkdayjobs.com/EarlyTalent_Careers/job/Indianapolis-IN---Hague-Rd/Summer-Intern---Product-Data_JR37448"
+  },
   "allegion|product management intern|carmel, in": {
     "first_seen": "2026-10-06",
     "last_seen": "2026-11-22",
@@ -1697,7 +1707,17 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://allegion.wd5.myworkdayjobs.com/careers/job/Carmel-IN/Summer-Intern---Product-Management_JR37369-1"
+    "url": "https://allegion.wd5.myworkdayjobs.com/EarlyTalent_Careers/job/Carmel-IN/Summer-Intern---Product-Management_JR37369"
+  },
+  "allegion|software engineer intern - software engineering|golden, co": {
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://allegion.wd5.myworkdayjobs.com/EarlyTalent_Careers/job/Golden-CO/Summer-Intern---Software-Engineering_JR37795"
   },
   "allegion|software engineering intern|golden, co": {
     "first_seen": "2026-09-25",
@@ -1717,7 +1737,7 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://allegion.wd5.myworkdayjobs.com/careers/job/Golden-CO/Summer-Intern---Software-Systems-Engineering_JR37395-1"
+    "url": "https://allegion.wd5.myworkdayjobs.com/EarlyTalent_Careers/job/Golden-CO/Summer-Intern---Software-Systems-Engineering_JR37395"
   },
   "allegro microsystems|electronic engineering intern|musselburgh, uk": {
     "first_seen": "2026-10-09",
@@ -3149,7 +3169,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://careers.amd.com/jobs/90475?icims=1&lang=en-us"
   },
   "amd|compiler engineer intern/co-op - masters|austin, tx; boxborough, ma; fishkill, ny; fort collins, co; longmont, co": {
@@ -39861,7 +39881,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://job-boards.eu.greenhouse.io/mangroup/jobs/5012811101"
   },
   "mann+hummel|product management & market intelligence intern|gastonia, nc": {
@@ -46274,7 +46294,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.smartrecruiters.com/NBCUniversal3/744000153444475"
   },
   "nbcuniversal|data analytics intern|london, uk": {
@@ -46885,7 +46905,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.nexteraenergy.com/job/Juno-Beach-Summer-Intern-Technical-FL-33408/1450749000/?ats=successfactors"
   },
   "nexthop.ai|software engineer intern|burnaby, bc, canada": {
@@ -68606,7 +68626,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.tesla.com/careers/search/job/284156"
   },
   "tesla|firmware intern - soc firmware engineer - si hardware infrastructure|austin, tx": {
@@ -74644,7 +74664,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://trimble.wd1.myworkdayjobs.com/en-US/TrimbleCareers/job/Canada---Richmond-Hill-Ontario-Applanix/Software-Engineering-Intern_R57963"
   },
   "trimont|research intern|atlanta, ga": {
@@ -74861,12 +74881,12 @@
   },
   "tyler technologies|software development intern - summer 2027|falmouth, me; orono, me; yarmouth, me": {
     "first_seen": "2026-09-22",
-    "last_seen": "2026-11-21",
+    "last_seen": "2026-11-22",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.jobvite.com/tylertech/job/oxAPAfwg?nl=1&nl=1&fr=false"
   },
   "tyler technologies|software development intern - summer 2027|lakewood, co": {
@@ -76859,6 +76879,16 @@
     ],
     "status": "open",
     "url": "https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Germantown-MD-USA/Hardware-Engineering-Co-Op_260005139-2"
+  },
+  "viavi solutions|robotics intern|bothell, wa": {
+    "first_seen": "2026-11-22",
+    "last_seen": "2026-11-22",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://viavisolutions.wd1.myworkdayjobs.com/careers/job/Bothell-WA-USA/COOP---EFI-FIT-Intern_260005313-1"
   },
   "viavi solutions|software engineer co-op|germantown, md": {
     "first_seen": "2026-09-14",
@@ -79074,7 +79104,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://job-boards.greenhouse.io/wikimedia/jobs/8268853"
   },
   "wilbur-ellis|branded products intern|california; colorado; michigan; oregon; texas; washington": {
