@@ -6409,6 +6409,16 @@
     "status": "closed",
     "url": "https://artofproblemsolving.com/careers/job/8199296003?gh_jid=8199296003"
   },
+  "artefact|ai builder intern|new york, ny": {
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/artefactlinkedin/jobs/8958079002"
+  },
   "artefact|ai engineer intern|new york, ny": {
     "first_seen": "2026-11-23",
     "last_seen": "2026-11-25",
@@ -16765,7 +16775,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://apply.workable.com/connectprep/j/1AF4F8C65F/apply"
   },
   "connectprep|data analyst intern|remote in usa; washington, dc": {
@@ -16778,6 +16788,16 @@
     ],
     "status": "open",
     "url": "https://apply.workable.com/connectprep/j/D1C67258C0/apply"
+  },
+  "connectprep|data analyst intern|washington": {
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://apply.workable.com/connectprep/j/9F465A2E1A/apply"
   },
   "conocophillips|trading analytics intern|houston, tx": {
     "first_seen": "2026-08-28",
@@ -20715,7 +20735,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern-Gameplay-UI/216190"
   },
   "electronic arts|software engineer intern|orlando, fl": {
@@ -20745,7 +20765,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ea.com/en_US/careers/JobDetail/Software-Engineer-Intern-Tools/216192"
   },
   "electronic arts|technical artist co-op|vancouver, bc, canada": {
@@ -30200,7 +30220,7 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://hp.wd5.myworkdayjobs.com/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Systems-Intern_UNI4801-1"
+    "url": "https://hp.wd5.myworkdayjobs.com/EXTEU-AC-CareerSite/job/San-Francisco-California-United-States-of-America/Software-Systems-Intern_UNI4801"
   },
   "hp iq|electrical engineer intern - hardware|san francisco, ca": {
     "first_seen": "2026-10-27",
@@ -36530,7 +36550,7 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://jobs.l3harris.com/job/Melbourne-Software-Engineering-Intern-(Melbourne,-FL)-FL-32901/1428467400/?ats=successfactors"
+    "url": "https://jobs.l3harris.com/job/Melbourne-Software-Engineer-Intern-FL-32919/1453684500/?ats=successfactors"
   },
   "l3harris technologies|software engineer intern|nashville, tn": {
     "first_seen": "2026-11-04",
@@ -37132,6 +37152,16 @@
     ],
     "status": "open",
     "url": "https://leidos.wd5.myworkdayjobs.com/External/job/Atlantic-City-NJ/Systems--Integration-and-Software-Engineer-Intern_R-00194152"
+  },
+  "lendable|credit analyst intern|london, uk": {
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.ashbyhq.com/lendable/eabb1e2a-86c3-48e6-836c-af967e0e71d2/application?embed=true"
   },
   "lendable|intern|london, uk": {
     "first_seen": "2026-10-19",
@@ -42534,6 +42564,16 @@
     "status": "open",
     "url": "https://jobs.jobvite.com/metropolitantransportationauthority/job/orDQAfwe?nl=1&nl=1&fr=false"
   },
+  "metropolitan transportation authority|operations analytics and problem management|new york, ny": {
+    "first_seen": "2026-11-25",
+    "last_seen": "2026-11-25",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.jobvite.com/metropolitantransportationauthority/job/ohfNAfwD?nl=1&nl=1&fr=false"
+  },
   "metropolitan transportation authority|ridership analysis and modeling emerging talent intern|new york, ny": {
     "first_seen": "2026-09-19",
     "last_seen": "2026-11-25",
@@ -44158,7 +44198,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://job-boards.greenhouse.io/momentenergy/jobs/4421775009"
   },
   "moment energy|firmware engineering co-op|surrey, bc, canada": {
@@ -56107,7 +56147,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ashbyhq.com/quadric/8bc97324-bcdb-4680-a03c-4c6e590644c2/application?embed=true"
   },
   "quadrillion|research intern|new york, ny": {
@@ -59216,7 +59256,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.lever.co/rosaiclabs/8e3e00f8-5b06-450c-bb63-5cc4fc3136ab/apply"
   },
   "rosaiclabs|cpu architecture & performance engineer intern|austin, tx; santa clara, ca": {
@@ -61003,7 +61043,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://job-boards.greenhouse.io/samsungsemiconductor/jobs/8207759003"
   },
   "samsung|business intelligence & data analytics intern|plano, tx": {
@@ -72839,7 +72879,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ashbyhq.com/trajectory/ceee0ea0-195d-4c58-8b57-4013c81e373c/application?embed=true"
   },
   "trajectory|member of technical staff \u2013 research intern|san francisco, ca": {
