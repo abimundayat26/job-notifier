@@ -2557,6 +2557,16 @@
     "status": "open",
     "url": "https://amazon.jobs/en/jobs/10554586/2027-software-dev-engineer-intern-united-kingdom"
   },
+  "amazon|software development engineer apprentice - military veterans|arlington, va; bellevue, wa; cupertino, ca; denver, co": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://amazon.jobs/en/jobs/3188438/software-development-engineer-apprentice-military-veterans"
+  },
   "amazon|software development engineer apprentice|edinburgh, uk": {
     "first_seen": "2026-11-06",
     "last_seen": "2026-11-27",
@@ -7466,6 +7476,16 @@
     "status": "open",
     "url": "https://job-boards.greenhouse.io/atoms/jobs/8909102002"
   },
+  "atoms|software engineer intern|la; mountain view, ca; nyc; sf; seattle, wa": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8963704002"
+  },
   "atoms|software engineer intern|seattle, wa": {
     "first_seen": "2026-10-15",
     "last_seen": "2026-11-26",
@@ -11345,7 +11365,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ashbyhq.com/brightstar-ai/a72ffc7e-38ba-4d7c-8d08-cac6b9974024/application?embed=true"
   },
   "bristol myers squibb|quality control strategy and science co-op|new brunswick, nj": {
@@ -12388,7 +12408,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.bytedance.com/en/position/7623541709721307445/detail"
   },
   "bytedance|student researcher - llm post training - agent & reinforcement learning|san jose, ca": {
@@ -12422,7 +12442,37 @@
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
     "status": "open",
-    "url": "https://jobs.bytedance.com/en/position/7670318960697952517/detail"
+    "url": "https://jobs.bytedance.com/en/position/7623548747208739077/detail"
+  },
+  "bytedance|student researcher - seed model - llm|san jose, ca": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.bytedance.com/en/position/7623539152655632693/detail"
+  },
+  "bytedance|student researcher - seed model - speech|san jose, ca": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.bytedance.com/en/position/7623550540616108293/detail"
+  },
+  "bytedance|student researcher - seed model - vision|san jose, ca": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.bytedance.com/en/position/7623543230203939077/detail"
   },
   "bytedance|student researcher - seed vision - long-range video generation|san jose, ca": {
     "first_seen": "2026-08-28",
@@ -12468,6 +12518,26 @@
     "status": "open",
     "url": "https://jobs.bytedance.com/en/position/7670330161462364421/detail"
   },
+  "bytedance|student researcher intern - seed model - ai foundation model infrastructure|seattle, wa": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.bytedance.com/en/position/7623552847531493685/detail"
+  },
+  "bytedance|student researcher intern - seed model - multimodal interaction & world model|san jose, ca": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.bytedance.com/en/position/7623547506849679621/detail"
+  },
   "bytedance|student researcher intern - seed model - seed responsible ai|san jose, ca": {
     "first_seen": "2026-09-24",
     "last_seen": "2026-11-27",
@@ -12488,6 +12558,16 @@
     ],
     "status": "open",
     "url": "https://jobs.bytedance.com/en/position/7538943251756910856/detail"
+  },
+  "bytedance|student researcher intern|seattle, wa": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://jobs.bytedance.com/en/position/7623552947364317445/detail"
   },
   "bytedance|student researcher|san jose, ca": {
     "first_seen": "2026-08-28",
@@ -15352,7 +15432,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://www.citadel.com/careers/details/quantitative-researcher-post-doctoral-intern-us/"
   },
   "citadel|quantitative researcher \u2013 phd intern|greenwich, ct; houston, tx; miami, fl; nyc": {
@@ -16056,7 +16136,7 @@
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "open",
+    "status": "closed",
     "url": "https://jobs.ashbyhq.com/coderabbit/c30ab34a-98f3-4c41-b4ba-179bdbab32c9/application?embed=true"
   },
   "cogna|software engineer intern|london, uk": {
@@ -20804,6 +20884,16 @@
     ],
     "status": "open",
     "url": "https://jobs.smartrecruiters.com/EncephaloInvestments/743999734497349"
+  },
+  "encepta|gis data technician intern|burnaby, bc, canada; victoria, bc, canada": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://encepta.bamboohr.com/careers/181/"
   },
   "encore|it application development intern - summer 2027|schiller park, il": {
     "first_seen": "2026-11-21",
@@ -30349,6 +30439,46 @@
     ],
     "status": "closed",
     "url": "https://icf.wd5.myworkdayjobs.com/icfexternal_career_site/job/Reston-VA/XMLNAME-2027-Summer-Intern--Software-Engineer--Reston--VA-_R2603522"
+  },
+  "iconiq capital|ai engineer intern|new york, ny": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/iconiqhandshake/jobs/8386455"
+  },
+  "iconiq capital|data & analytics intern|new york, ny": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/iconiqhandshake/jobs/8391973"
+  },
+  "iconiq capital|data science intern - science|san francisco, ca": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/iconiqhandshake/jobs/8391972"
+  },
+  "iconiq capital|engineering intern|san francisco, ca": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://job-boards.greenhouse.io/iconiqhandshake/jobs/8394060"
   },
   "id.me|analytics engineer intern|mountain view, ca": {
     "first_seen": "2026-10-24",
@@ -45727,12 +45857,12 @@
   },
   "nokia|optical test co-op intern|ottawa, on, canada": {
     "first_seen": "2026-10-27",
-    "last_seen": "2026-11-23",
+    "last_seen": "2026-11-27",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/40113"
   },
   "nokia|optical test co-op|san jose, ca": {
@@ -53756,6 +53886,26 @@
     ],
     "status": "open",
     "url": "https://jobs.ashbyhq.com/powertown/754a7189-5505-459d-a7d3-dda2e0eaf38b/application?embed=true"
+  },
+  "pqshield|hardware engineer intern - placement year|oxford, uk": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://pqshield.com/careers/apply/5049819101?gh_jid=5049819101"
+  },
+  "pqshield|software engineer intern|oxford, uk": {
+    "first_seen": "2026-11-27",
+    "last_seen": "2026-11-27",
+    "source": "tier1:SimplifyJobs/Summer2027-Internships",
+    "sources": [
+      "tier1:SimplifyJobs/Summer2027-Internships"
+    ],
+    "status": "open",
+    "url": "https://pqshield.com/careers/apply/5049820101?gh_jid=5049820101"
   },
   "pramaana labs|research intern|bengaluru, karnataka, india; palo alto, ca": {
     "first_seen": "2026-10-28",
@@ -64620,13 +64770,13 @@
   },
   "synopsys|technical-engineering intern|mississauga, on, canada": {
     "first_seen": "2026-10-17",
-    "last_seen": "2026-10-28",
+    "last_seen": "2026-11-27",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
-    "url": "https://synopsys.avature.net/careers/JobDetail/19195"
+    "status": "open",
+    "url": "https://synopsys.avature.net/careers/JobDetail/19725"
   },
   "syntax|index analyst intern|new york, ny": {
     "first_seen": "2026-11-17",
@@ -72039,12 +72189,12 @@
   },
   "tyler technologies|software development intern - summer 2027|falmouth, me; orono, me; yarmouth, me": {
     "first_seen": "2026-09-22",
-    "last_seen": "2026-11-26",
+    "last_seen": "2026-11-27",
     "source": "tier1:SimplifyJobs/Summer2027-Internships",
     "sources": [
       "tier1:SimplifyJobs/Summer2027-Internships"
     ],
-    "status": "closed",
+    "status": "open",
     "url": "https://jobs.jobvite.com/tylertech/job/oxAPAfwg?nl=1&nl=1&fr=false"
   },
   "tyler technologies|software development intern - summer 2027|lakewood, co": {
